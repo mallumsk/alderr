@@ -278,6 +278,7 @@
       </div>
       <div class="max-w-6xl mx-auto px-6 space-y-12">
         <!-- Block 1 -->
+
         <div class="grid md:grid-cols-1 gap-10 items-center">
           <div>
             <!-- Carousel Section -->
@@ -371,12 +372,107 @@
     <!-- spacer section -->
     <section class="py-32 bg-white">
       <div class="max-w-6xl mx-auto px-6 text-center">
+        <div
+          class="relative rounded-2xl py-12 px-48 overflow-hidden bg-[#e0efec]"
+        >
+          <!-- Slides -->
+
+          <div class="slides flex items-center justify-center relative">
+            <!-- Slide 1 -->
+            <div
+              class="slide active flex flex-col md:flex-row items-center gap-6 text-center md:text-left"
+            >
+              <div class="relative flex-shrink-0">
+                <img
+                  src="https://randomuser.me/api/portraits/women/68.jpg"
+                  alt="Person 1"
+                  class="w-32 h-32 rounded-full object-cover"
+                />
+              </div>
+              <div>
+                <h4 class="text-2xl font-semibold mb-4">
+                  “Arcu rhoncus amet tellus sit ipsum dictum sem. Faucibus
+                  imperdiet velit tortor scelerisque quam velit et. Magna
+                  pulvinar justo condimentum.”
+                </h4>
+                <h3 class="font-bold text-gray-900">Serena Jones</h3>
+                <p class="text-gray-500">CEO, Company Name</p>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div
+              class="slide absolute inset-0 flex flex-col md:flex-row items-center gap-6 text-center md:text-left"
+            >
+              <div class="relative flex-shrink-0">
+                <img
+                  src="https://randomuser.me/api/portraits/men/33.jpg"
+                  alt="Person 2"
+                  class="w-32 h-32 rounded-full object-cover"
+                />
+              </div>
+              <div>
+                <p class="text-2xl font-semibold mb-4">
+                  “Suspendisse potenti. Curabitur convallis lectus non tortor
+                  malesuada, vitae consequat urna pharetra.”
+                </p>
+                <h3 class="font-bold text-gray-900">Michael Brown</h3>
+                <p class="text-gray-500">CTO, Techify</p>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div
+              class="slide absolute inset-0 flex flex-col md:flex-row items-center gap-6 text-center md:text-left"
+            >
+              <div class="relative flex-shrink-0">
+                <img
+                  src="https://randomuser.me/api/portraits/women/45.jpg"
+                  alt="Person 3"
+                  class="w-32 h-32 rounded-full object-cover"
+                />
+              </div>
+              <div>
+                <p class="text-2xl font-semibold mb-4">
+                  “Donec accumsan, massa sed mattis placerat, odio quam
+                  fermentum metus, nec tincidunt elit ex ac augue.”
+                </p>
+                <h3 class="font-bold text-gray-900">Ava Smith</h3>
+                <p class="text-gray-500">Founder, DesignWave</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation Buttons -->
+          <button
+            id="prev"
+            class="absolute left-20 top-1/2 -translate-y-1/2 border border-pink-600 text-pink-600 px-4 py-2 rounded-full hover:bg-pink-600 hover:text-white transition"
+          >
+            &#10094;
+          </button>
+          <button
+            id="next"
+            class="absolute right-20 top-1/2 -translate-y-1/2 border border-pink-600 text-pink-600 px-4 py-2 rounded-full hover:bg-pink-600 hover:text-white transition"
+          >
+            &#10095;
+          </button>
+
+          <!-- Dots -->
+          <div class="flex justify-center mt-6 space-x-2">
+            <div class="dot w-2 h-2 rounded-full bg-gray-400"></div>
+            <div class="dot w-2 h-2 rounded-full bg-gray-400"></div>
+            <div class="dot w-2 h-2 rounded-full bg-gray-400"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="max-w-6xl mx-auto px-6 text-center">
         <img
           src="images/feedback.jpg"
           alt="spacer image"
           class="object-cover"
         />
-      </div>
+      </div> -->
     </section>
 
     <!-- mudaki Section -->
@@ -571,37 +667,6 @@
         <div class="pt-16">© 2025 Alderr. All rights reserved.</div>
       </div>
     </footer>
-    <script>
-      // Theme toggle
-      const themeToggle = document.getElementById("themeToggle");
-      themeToggle.onclick = () =>
-        document.documentElement.classList.toggle("dark");
-
-      // Mobile menu
-      const menuBtn = document.getElementById("menuBtn");
-      const mobileMenu = document.getElementById("mobileMenu");
-      menuBtn.onclick = () => mobileMenu.classList.toggle("hidden");
-
-      // Carousel functionality
-      const carousel = document.getElementById("carousel");
-      let index = 0;
-      document.getElementById("nextBtn").onclick = () => {
-        index = (index + 1) % 2;
-        carousel.style.transform = `translateX(-${index * 100}%)`;
-      };
-      document.getElementById("prevBtn").onclick = () => {
-        index = (index - 1 + 2) % 2;
-        carousel.style.transform = `translateX(-${index * 100}%)`;
-      };
-
-      // Subscribe form
-      const subscribeForm = document.getElementById("subscribeForm");
-      const subscribeMsg = document.getElementById("subscribeMsg");
-      subscribeForm.addEventListener("submit", (e) => {
-        e.preventDefault();
-        subscribeMsg.classList.remove("hidden");
-        subscribeForm.reset();
-      });
-    </script>
+    <script src="js/slider.js"></script>
   </body>
 </html>
