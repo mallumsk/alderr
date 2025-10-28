@@ -279,6 +279,70 @@
       <div class="max-w-6xl mx-auto px-6 space-y-12">
         <!-- Block 1 -->
 
+        <div
+          id="case-slider"
+          class="relative w-[90%] max-w-6xl overflow-hidden rounded-2xl shadow-lg"
+        >
+          <div class="relative">
+            <div class="slide active relative">
+              <img
+                src="images/slider1.jpg"
+                class="w-full h-[500px] object-cover rounded-2xl"
+              />
+              <div
+                class="absolute bottom-6 left-6 bg-white shadow-lg rounded-xl p-6 max-w-md"
+              >
+                <h3 class="text-xl font-bold text-gray-900 mb-2">
+                  Case study title
+                </h3>
+                <p class="text-gray-600 mb-3">
+                  Senectus vulputate condimentum feugiat vel aliquam malesuada
+                  aliquam tellus mauris.
+                </p>
+                <a href="#" class="text-blue-600 font-medium hover:underline"
+                  >Read More</a
+                >
+              </div>
+            </div>
+
+            <div class="slide absolute inset-0">
+              <img
+                src="images/slider3.jpg"
+                class="w-full h-[500px] object-cover rounded-2xl"
+              />
+              <div
+                class="absolute bottom-6 left-6 bg-white shadow-lg rounded-xl p-6 max-w-md"
+              >
+                <h3 class="text-xl font-bold text-gray-900 mb-2">
+                  Innovative healthcare study
+                </h3>
+                <p class="text-gray-600 mb-3">
+                  Faucibus imperdiet velit tortor scelerisque quam velit et
+                  magna pulvinar justo condimentum.
+                </p>
+                <a href="#" class="text-blue-600 font-medium hover:underline"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <button
+            id="prev2"
+            class="absolute left-4 top-1/2 -translate-y-1/2 bg-white shadow-md text-gray-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition"
+          >
+            &#10094;
+          </button>
+          <button
+            id="next2"
+            class="absolute right-4 top-1/2 -translate-y-1/2 bg-white shadow-md text-gray-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition"
+          >
+            &#10095;
+          </button>
+        </div>
+
+        <!--new slider end -->
+
         <div class="grid md:grid-cols-1 gap-10 items-center">
           <div>
             <!-- Carousel Section -->
@@ -329,11 +393,11 @@
                 </div>
               </div>
             </section> -->
-            <img
+            <!-- <img
               src="images/slider.jpg"
               alt="Hero Image"
               class="object-cover"
-            />
+            /> -->
           </div>
         </div>
         <div class="text-center">
@@ -373,6 +437,7 @@
     <section class="py-32 bg-white">
       <div class="max-w-6xl mx-auto px-6 text-center">
         <div
+          id="testimonial-slider"
           class="relative rounded-2xl py-12 px-48 overflow-hidden bg-[#e0efec]"
         >
           <!-- Slides -->
@@ -464,7 +529,8 @@
             <div class="dot w-2 h-2 rounded-full bg-gray-400"></div>
           </div>
         </div>
-      </div>
+
+        
 
       <!-- <div class="max-w-6xl mx-auto px-6 text-center">
         <img
@@ -604,7 +670,7 @@
 
     <!-- Footer -->
     <footer
-      class="bg-[#dfedea] py-8 border-t border-gray-200 text-center text-sm text-gray-500"
+      class="bg-[#dfedea] pt-32 pb-16 border-t border-gray-200 text-center text-sm text-gray-500"
     >
       <div class="max-w-6xl mx-auto px-6 text-center">
         <div
@@ -618,6 +684,7 @@
             />
             <!--subscription form -->
             <div class="text-left mt-4">
+              Join our newsletter convallis erat in magnis risus
               <form id="subscribeForm" class="mt-4">
                 <input
                   type="email"
@@ -625,12 +692,16 @@
                   class="border border-gray-300 rounded-full px-4 py-2"
                   required
                 />
+
                 <button
-                  type="submit"
-                  class="bg-[#15404e] text-white rounded-lg px-8 py-2 ml-6 mt-2 rounded-full hover:bg-fuchsia-800 text-left"
+                  class="bg-[#850a56] text-white text-sm font-semibold px-4 py-2 rounded-full hover:bg-fuchsia-800"
                 >
-                  Subscribe
+                  Scbscribe
                 </button>
+                <div class="pt-4">
+                  By subscribing you agree to with our Privacy Policy and
+                  provide consent to receive updates from our company.
+                </div>
 
                 <p id="subscribeMsg" class="hidden text-green-500 mt-2">
                   Thank you for subscribing!
@@ -664,7 +735,47 @@
           </div>
         </div>
 
-        <div class="pt-16">© 2025 Alderr. All rights reserved.</div>
+        <div
+          class="max-w-7xl rounded-full bg-white mx-auto flex items-center justify-between px-6 py-4 mt-16 "
+        >
+          <div class="flex items-center space-x-2">
+            © 2025 Alderr. All rights reserved.
+          </div>
+
+          <nav
+            class="hidden md:flex items-center space-x-6 text-sm font-medium"
+          >
+            <a href="#" class="hover:text-blue-800">Privacy Policy</a>
+            <a href="#" class="hover:text-blue-800">Terms of Service</a>
+          </nav>
+
+          <button
+            class="text-sm font-semibold px-4 py-2 rounded-full hover:bg-fuchsia-800"
+          >
+            FB
+          </button>
+
+          <button
+            class="text-sm font-semibold px-4 py-2 rounded-full hover:bg-fuchsia-800"
+          >
+            in
+          </button>
+          <button
+            class="text-sm font-semibold px-4 py-2 rounded-full hover:bg-fuchsia-800"
+          >
+            LinkedIn
+          </button>
+          <button
+            class="text-sm font-semibold px-4 py-2 rounded-full hover:bg-fuchsia-800"
+          >
+            X
+          </button>
+          <button
+            class="text-sm font-semibold px-4 py-2 rounded-full hover:bg-fuchsia-800"
+          >
+            youtube
+          </button>
+        </div>
       </div>
     </footer>
     <script src="js/slider.js"></script>
