@@ -16,29 +16,8 @@
 
   <body class="bg-white text-gray-800 font-sans">
     <!-- Header -->
-    <header class="bg-[#15404e] shadow-sm py-12">
-      <!-- <div
-        class="max-w-7xl rounded-full bg-white mx-auto flex items-center justify-between px-6 py-4"
-      >
-        <div class="flex items-center space-x-2">
-          <span class="text-2xl font-extrabold text-blue-900">
-            <img src="images/logo.jpg" alt="Hero Image" class="object-cover"
-          /></span>
-        </div>
-
-        <nav class="hidden md:flex items-center space-x-6 text-sm font-medium">
-          <a href="#" class="hover:text-blue-800">Products</a>
-          <a href="#" class="hover:text-blue-800">Resources</a>
-          <a href="#" class="hover:text-blue-800">Pricing</a>
-          <a href="#" class="hover:text-blue-800">About Us</a>
-        </nav>
-
-        <button
-          class="bg-[#850a56] text-white text-sm font-semibold px-4 py-2 rounded-full hover:bg-fuchsia-800"
-        >
-          Get Started
-        </button>
-      </div> -->
+    <!-- <header class="bg-[#15404e] shadow-sm py-12">
+      
        
       <nav
         aria-label="Global"
@@ -107,16 +86,7 @@
               class="w-screen max-w-6xl overflow-hidden rounded-3xl bg-gray-100 outline-1 -outline-offset-1 outline-white/10 transition transition-discrete [--anchor-gap:--spacing(3)] backdrop:bg-transparent open:block data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in  "
             >
               <div class="p-4 ">
-                <!-- <div
-                  class="grid grid-cols-1 h-32 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
-                >
-                  <div class="">active button</div>
-                  <div class="">list of button</div>
-                  <div class="">list of button</div>
-                  <div class="">watch video</div>
-
-                 
-                </div> -->
+             
                 <div
                   class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5"
                 >
@@ -254,9 +224,7 @@
           >
             Get Started
           </button>
-          <!-- <a href="#" class="text-sm/6 font-semibold"
-            >Log in <span aria-hidden="true">&rarr;</span></a
-          > -->
+     
         </div>
       </nav>
       <el-dialog>
@@ -273,10 +241,7 @@
                     alt="Hero Image"
                     class="h-8 w-auto"
                   />
-                  <!-- <img
-                    src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
-                    alt=""
-                  /> -->
+                 
                 </a>
                 <button
                   type="button"
@@ -407,11 +372,377 @@
                     >
                       Get Started
                     </button>
-                    <!-- <a
+               
+                  </div>
+                </div>
+              </div>
+            </el-dialog-panel>
+          </div>
+        </dialog>
+      </el-dialog>
+
+    </header> -->
+
+    <!-- Hero Section -->
+    <section class="bg-[#15404e] text-white relative overflow-hidden">
+
+      <header class=" py-12 z-50 relative text-gray-900">
+      
+       
+      <nav
+        aria-label="Global"
+        class="mx-auto flex max-w-7xl bg-white rounded-full items-center justify-between px-6 py-4 lg:px-8"
+      >
+        <div class="flex lg:flex-1">
+          <a href="#" class="-m-1.5 p-1.5">
+            <span class="sr-only">Your Company</span>
+            <span class="text-2xl font-extrabold text-blue-900">
+              <img src="images/subpage1/header_alderr_logo.svg" alt="Hero Image" class="object-cover"
+            /></span>
+          </a>
+        </div>
+        <div class="flex lg:hidden">
+          <button
+            type="button"
+            command="show-modal"
+            commandfor="mobile-menu"
+            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              data-slot="icon"
+              aria-hidden="true"
+              class="size-6"
+            >
+              <path
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <el-popover-group class="hidden lg:flex lg:gap-x-12">
+          <div class="relative">
+            <button
+              popovertarget="desktop-menu-product"
+              class="flex items-center gap-x-1 text-sm/6 font-semibold"
+            >
+              Product
+              <svg
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                data-slot="icon"
+                aria-hidden="true"
+                class="size-5 flex-none text-gray-500"
+              >
+                <path
+                  d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+
+            <el-popover
+              id="desktop-menu-product"
+              anchor="bottom"
+              style="position: absolute; top:-209px"
+              popover
+              class="w-screen max-w-6xl overflow-hidden rounded-3xl bg-gray-100 outline-1 -outline-offset-1 outline-white/10 transition transition-discrete [--anchor-gap:--spacing(3)] backdrop:bg-transparent open:block data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in  "
+            >
+              <div class="p-4 ">
+            
+                <div
+                  class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5"
+                >
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-700/50 group-hover:bg-gray-700"
+                  ></div>
+               
+                  <div class="flex-auto">
+                    <a href="#" class="block font-semibold ">
+                      willow
+                      <span class="absolute inset-0"></span>
+                    </a>
+                    <p class="mt-1 text-gray-400">
+                      Fusce dapibus, tellus ac cursus commodo
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5"
+                >
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-700/50 group-hover:bg-gray-700"
+                  ></div>
+                  <div class="flex-auto">
+                    <a href="#" class="block font-semibold  ">
+                      willow
+                      <span class="absolute inset-0"></span>
+                    </a>
+                    <p class="mt-1 text-gray-400">
+                      Fusce dapibus, tellus ac cursus commodo
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5"
+                >
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-700/50 group-hover:bg-gray-700"
+                  ></div>
+                  <div class="flex-auto">
+                    <a href="#" class="block font-semibold ">
+                      willow
+                      <span class="absolute inset-0"></span>
+                    </a>
+                    <p class="mt-1 text-gray-400">
+                      Fusce dapibus, tellus ac cursus commodo
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5"
+                >
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-700/50 group-hover:bg-gray-700"
+                  ></div>
+                  <div class="flex-auto">
+                    <a href="#" class="block font-semibold  ">
+                      willow
+                      <span class="absolute inset-0"></span>
+                    </a>
+                    <p class="mt-1 text-gray-400">
+                      Fusce dapibus, tellus ac cursus commodo
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5"
+                >
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-700/50 group-hover:bg-gray-700"
+                  ></div>
+                  <div class="flex-auto">
+                    <a href="#" class="block font-semibold  ">
+                      willow
+                      <span class="absolute inset-0"></span>
+                    </a>
+                    <p class="mt-1 text-gray-400">
+                      Fusce dapibus, tellus ac cursus commodo
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="grid grid-cols-2 divide-x divide-white/10 bg-gray-700/50"
+              >
+                <a
+                  href="#"
+                  class="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-white hover:bg-gray-700/50"
+                >
+                  <svg
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    data-slot="icon"
+                    aria-hidden="true"
+                    class="size-5 flex-none text-gray-500"
+                  >
+                    <path
+                      d="M2 10a8 8 0 1 1 16 0 8 8 0 0 1-16 0Zm6.39-2.908a.75.75 0 0 1 .766.027l3.5 2.25a.75.75 0 0 1 0 1.262l-3.5 2.25A.75.75 0 0 1 8 12.25v-4.5a.75.75 0 0 1 .39-.658Z"
+                      clip-rule="evenodd"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                  Watch demo
+                </a>
+                <a
+                  href="#"
+                  class="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-white hover:bg-gray-700/50"
+                >
+                  <svg
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    data-slot="icon"
+                    aria-hidden="true"
+                    class="size-5 flex-none text-gray-500"
+                  >
+                    <path
+                      d="M2 3.5A1.5 1.5 0 0 1 3.5 2h1.148a1.5 1.5 0 0 1 1.465 1.175l.716 3.223a1.5 1.5 0 0 1-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 0 0 6.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 0 1 1.767-1.052l3.223.716A1.5 1.5 0 0 1 18 15.352V16.5a1.5 1.5 0 0 1-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 0 1 2.43 8.326 13.019 13.019 0 0 1 2 5V3.5Z"
+                      clip-rule="evenodd"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                  Contact 
+                </a>
+              </div>
+            </el-popover>
+          </div>
+
+          <a href="#" class="text-sm/6 font-semibold">Resources</a>
+          <a href="#" class="text-sm/6 font-semibold">Pricing</a>
+          <a href="#" class="text-sm/6 font-semibold">About Us</a>
+        </el-popover-group>
+        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+          <button
+            class="bg-[#850a56] text-white text-sm font-semibold px-4 py-2 rounded-full hover:bg-fuchsia-800"
+          >
+            Get Started
+          </button>
+      
+        </div>
+      </nav>
+      <el-dialog>
+        <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+          <div tabindex="0" class="fixed inset-0 focus:outline-none">
+            <el-dialog-panel
+              class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-100 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10"
+            >
+              <div class="flex items-center justify-between">
+                <a href="#" class="-m-1.5 p-1.5">
+                  <span class="sr-only">Alderr</span>
+                  <img
+                    src="images/logo.jpg"
+                    alt="Hero Image"
+                    class="h-8 w-auto"
+                  />
+             
+                </a>
+                <button
+                  type="button"
+                  command="close"
+                  commandfor="mobile-menu"
+                  class="-m-2.5 rounded-md p-2.5 text-gray-400"
+                >
+                  <span class="sr-only">Close menu</span>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    data-slot="icon"
+                    aria-hidden="true"
+                    class="size-6"
+                  >
+                    <path
+                      d="M6 18 18 6M6 6l12 12"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="mt-6 flow-root">
+                <div class="-my-6 divide-y divide-white/10">
+                  <div class="space-y-2 py-6">
+                    <div class="-mx-3">
+                      <button
+                        type="button"
+                        command="--toggle"
+                        commandfor="products"
+                        class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold hover:bg-white/5"
+                      >
+                        Product
+                        <svg
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          data-slot="icon"
+                          aria-hidden="true"
+                          class="size-5 flex-none in-aria-expanded:rotate-180"
+                        >
+                          <path
+                            d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                            clip-rule="evenodd"
+                            fill-rule="evenodd"
+                          />
+                        </svg>
+                      </button>
+                      <el-disclosure
+                        id="products"
+                        hidden
+                        class="mt-2 block space-y-2"
+                      >
+                        <a
+                          href="#"
+                          class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold   hover:bg-white/5"
+                          >willow</a
+                        >
+                        <a
+                          href="#"
+                          class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold   hover:bg-white/5"
+                          >willow</a
+                        >
+                        <a
+                          href="#"
+                          class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold   hover:bg-white/5"
+                          >willow</a
+                        >
+                        <a
+                          href="#"
+                          class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold   hover:bg-white/5"
+                          >willow</a
+                        >
+                        <a
+                          href="#"
+                          class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold hover:bg-white/5"
+                          >willow</a
+                        >
+                        <a
+                          href="#"
+                          class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold   hover:bg-white/5"
+                          >willow</a
+                        >
+                        <a
+                          href="#"
+                          class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold  hover:bg-white/5"
+                          >willow</a
+                        >
+                        <a
+                          href="#"
+                          class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold  hover:bg-white/5"
+                          >willow</a
+                        >
+                        <a
+                          href="#"
+                          class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold   hover:bg-white/5"
+                          >willow</a
+                        >
+                        <a
+                          href="#"
+                          class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold  hover:bg-white/5"
+                          >willow</a
+                        >
+                    
+                      </el-disclosure>
+                    </div>
+                    <a
                       href="#"
-                      class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-white/5"
-                      >Log in</a
-                    > -->
+                      class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold   hover:bg-white/5"
+                      >Resources</a
+                    >
+                    <a
+                      href="#"
+                      class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold   hover:bg-white/5"
+                      >Pricing</a
+                    >
+                    <a
+                      href="#"
+                      class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold   hover:bg-white/5"
+                      >About Us</a
+                    >
+                  </div>
+                  <div class="py-6">
+                    <button
+                      class="bg-[#850a56] text-white text-sm font-semibold px-4 py-2 rounded-full hover:bg-fuchsia-800"
+                    >
+                      Get Started
+                    </button>
+                  
                   </div>
                 </div>
               </div>
@@ -421,9 +752,6 @@
       </el-dialog>
 
     </header>
-
-    <!-- Hero Section -->
-    <section class="bg-[#15404e] text-white relative overflow-hidden">
       <div
         class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center px-6"
       >
@@ -441,10 +769,16 @@
         </div>
 
         <div class="flex justify-center">
+          <div class="static hidden lg:block">
+            <div class="absolute -right-20 top-0 z-10">
+              <img src="images/top_mask_shape.png" />
+            </div>
+
+          </div>
           <img
-            src="images/hero.jpg"
+            src="images/subpage1/banner_lady.png"
             alt="Hero Image"
-            class="object-cover shadow-lg"
+            class="object-cover z-50"
           />
         </div>
       </div>
@@ -468,7 +802,7 @@
             </p>
           </div>
           <img
-            src="images/img-1.jpg"
+            src="images/subpage1/doctor_shape.png"
             alt="Brand Image 1"
             class="rounded-xl object-cover"
           />
@@ -479,7 +813,7 @@
           class="grid md:grid-cols-2 gap-10 items-center md:flex-row-reverse"
         >
           <img
-            src="images/img-2.jpg"
+            src="images/subpage1/doctor_with_tab.png"
             alt="Brand Image 2"
             class="rounded-xl object-cover"
           />
@@ -512,7 +846,7 @@
             </p>
           </div>
           <img
-            src="images/img-3.jpg"
+            src="images/subpage1/smaling_face.png"
             alt="Brand Image 3"
             class="rounded-xl object-cover"
           />
@@ -528,7 +862,7 @@
     <!-- Outcomes Section -->
     <section class="bg-[#faf8f6] pb-32">
       <div class="static hidden lg:block">
-        <div class="absolute right-0"><img src="images/rpt.jpg" /></div>
+        <div class="absolute right-0"><img src="images/subpage1/dot_pattern.png" /></div>
         <div class="max-w-6xl mx-auto px-6 text-center">
           <p
             class="text-sm uppercase text-[#577993] mb-2 pt-32 tracking-widest"
@@ -551,9 +885,9 @@
             >
               <div class="text-3xl mb-4">
                 <img
-                  src="images/icon_1.jpg"
+                  src="images/common/calender.svg"
                   alt="Brand Image 3"
-                  class="rounded-xl object-cover"
+                  class="  object-cover"
                 />
               </div>
               <h3 class="font-semibold text-lg mb-2">Outcome 1</h3>
@@ -568,9 +902,9 @@
             >
               <div class="text-3xl mb-4">
                 <img
-                  src="images/icon_2.jpg"
+                  src="images/common/manege.svg"
                   alt="Brand Image 3"
-                  class="rounded-xl object-cover"
+                  class="  object-cover"
                 />
               </div>
               <h3 class="font-semibold text-lg mb-2">Outcome 2</h3>
@@ -585,9 +919,9 @@
             >
               <div class="text-3xl mb-4">
                 <img
-                  src="images/icon_3.jpg"
+                  src="images/common/folder.svg "
                   alt="Brand Image 3"
-                  class="rounded-xl object-cover"
+                  class="  object-cover"
                 />
               </div>
               <h3 class="font-semibold text-lg mb-2">Outcome 3</h3>
@@ -610,7 +944,7 @@
         <div class="grid md:grid-cols-5 py-6 gap-10 items-center">
           <div class=" ">
             <img
-              src="images/c-logo1.jpg"
+              src="images/social_media/c1.svg"
               alt="Hero Image"
               class="object-cover"
             />
@@ -618,7 +952,7 @@
 
           <div class=" ">
             <img
-              src="images/c-logo2.jpg"
+              src="images/social_media/c2.svg"
               alt="Hero Image"
               class="object-cover"
             />
@@ -626,7 +960,7 @@
 
           <div class=" ">
             <img
-              src="images/c-logo3.jpg"
+              src="images/social_media/c3.svg"
               alt="Hero Image"
               class="object-cover"
             />
@@ -634,15 +968,15 @@
 
           <div class=" ">
             <img
-              src="images/c-logo4.jpg"
+              src="images/social_media/c4.svg"
               alt="Hero Image"
               class="object-cover"
             />
           </div>
           <div class=" ">
             <img
-              src="images/c-logo5.jpg"
-              alt="Hero Image"
+              src="images/social_media/c5.svg"
+              alt="youtube"
               class="object-cover"
             />
           </div>
@@ -667,7 +1001,7 @@
           <div class="relative">
             <div class="slide active relative">
               <img
-                src="images/slider1.jpg"
+                src="images/subpage1/slider_doctor.png"
                 class="w-full h-[500px] object-cover rounded-2xl"
               />
               <div
@@ -688,7 +1022,7 @@
 
             <div class="slide absolute inset-0">
               <img
-                src="images/slider3.jpg"
+                src="images/subpage1/slider_doctor.png"
                 class="w-full h-[500px] object-cover rounded-2xl"
               />
               <div
@@ -807,7 +1141,7 @@
             </p>
           </div>
           <img
-            src="images/img-4.jpg"
+            src="images/subpage1/happy_face_shape.png"
             alt="Brand Image 3"
             class="object-cover"
           />
@@ -914,7 +1248,7 @@
           class="grid md:grid-cols-2 gap-10 items-center md:flex-row-reverse"
         >
           <img
-            src="images/img-5.jpg"
+            src="images/subpage1/doctor_with-stethascope_shape.png"
             alt="Brand Image 2"
             class="rounded-xl object-cover"
           />
@@ -946,7 +1280,7 @@
           >
             <div class="text-3xl mb-4">
               <img
-                src="images/card_1.jpg"
+                src="images/subpage1/card_1.png"
                 alt="Brand Image 3"
                 class="object-cover"
               />
@@ -968,7 +1302,7 @@
           >
             <div class="text-3xl mb-4">
               <img
-                src="images/card_2.jpg"
+                src="images/subpage1/card_2.png"
                 alt="Brand Image 3"
                 class="object-cover"
               />
@@ -990,7 +1324,7 @@
           >
             <div class="text-3xl mb-4">
               <img
-                src="images/card_3.jpg"
+                src="images/subpage1/card_3.png"
                 alt="Brand Image 3"
                 class="object-cover"
               />
@@ -1013,8 +1347,8 @@
     <!-- CTA Section -->
     <section class="bg-[#15404e] text-white relative overflow-hidden">
       <div class="static hidden lg:block">
-        <div class="absolute right-0"><img src="images/lp1.jpg" /></div>
-        <div class="absolute left-0 bottom-0"><img src="images/lp.jpg" /></div>
+        <div class="absolute right-0"><img src="images/subpage1/dot_pattern_blue.png" /></div>
+        <div class="absolute left-0 bottom-0"><img src="images/subpage1/half_cercal_pattern.png" /></div>
 
         <div
           class="max-w-6xl mx-auto grid md:grid-cols-1 gap-8 items-center py-32 px-6"
@@ -1044,9 +1378,9 @@
         >
           <div class="col-span-4">
             <img
-              src="images/logofooter.jpg"
+              src="images/subpage1/footer_alderr_logo.svg"
               alt="Brand Image 2"
-              class="rounded-xl object-cover"
+              class=" object-cover"
             />
             <!--subscription form -->
             <div class="text-left mt-4">
@@ -1117,24 +1451,24 @@
           <div class="flex items-center space-x-2">
           <button
           class="text-sm font-semibold px-2 py-2 rounded-full hover:bg-gray-100" >
-           <img src="images/so_1.jpg" width="24px"> 
+           <img src="images/social_media/fb.svg" width="24px"> 
           </button>
 
           <button
           class="text-sm font-semibold px-2 py-2 rounded-full hover:bg-gray-100" >
-          <img src="images/so_2.jpg" width="24px"> 
+          <img src="images/social_media/instagram.svg" width="24px"> 
           </button>
           <button
           class="text-sm font-semibold px-2 py-2 rounded-full hover:bg-gray-100" >
-          <img src="images/so_3.jpg" width="24px"> 
+          <img src="images/social_media/linkedin.svg" width="24px"> 
           </button>
           <button
           class="text-sm font-semibold px-2 py-2 rounded-full hover:bg-gray-100" >
-          <img src="images/so_4.jpg" width="24px"> 
+          <img src="images/social_media/x.svg" width="24px"> 
           </button>
           <button
             class="text-sm font-semibold px-2 py-2 rounded-full hover:bg-gray-100" >
-          <img src="images/so_5.jpg" width="24px"> 
+          <img src="images/social_media/youtube.svg" width="24px"> 
           </button>
         </div>
         </div>
