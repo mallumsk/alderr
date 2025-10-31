@@ -13,3 +13,11 @@ p {font-family: poppins, sans-serif;}
     .slide.active {
       opacity: 1;
     }
+
+    .alink {
+      color: #15404E;
+    }
+
+    .hcolor {
+      color: #15404E;
+    }
