@@ -21,3 +21,48 @@ p {font-family: poppins, sans-serif;}
     .hcolor {
       color: #15404E;
     }
+
+/* === Color Palette === */
+
+/* === Color Palette === */
+
+/* Primary Colors */
+.spruce { color: #15404E; }
+.bg-spruce { background-color: #15404E; }
+.border-spruce { border-color: #15404E; }
+
+.cshadow { color: #7896AE; }
+.bg-cshadow { background-color: #7896AE; }
+.border-cshadow { border-color: #7896AE; }
+
+.mist { color: #DDEAF4; }
+.bg-mist { background-color: #DDEAF4; }
+.border-mist { border-color: #DDEAF4; }
+
+.mint { color: #E4EEEC; }
+.bg-mint { background-color: #E4EEEC; }
+.border-mint { border-color: #E4EEEC; }
+
+.plum { color: #850A56; }
+.bg-plum { background-color: #850A56; }
+.border-plum { border-color: #850A56; }
+
+/* Neutral Colors */
+.black-90 { color: #343434; }
+.bg-black-90 { background-color: #343434; }
+.border-black-90 { border-color: #343434; }
+
+.warm-grey { color: #ECEAE6; }
+.bg-warm-grey { background-color: #ECEAE6; }
+.border-warm-grey { border-color: #ECEAE6; }
+
+.pearl { color: #FAF8F6; }
+.bg-pearl { background-color: #FAF8F6; }
+.border-pearl { border-color: #FAF8F6; }
+
+ 
+.bg-plum-light { background-color: #862461;  }
+.border-plum-light { border-color: #862461;  }
+ 
+
+ 
