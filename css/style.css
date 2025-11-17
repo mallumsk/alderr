@@ -66,3 +66,37 @@ p {font-family: poppins, sans-serif;}
  
 
  
+      /* Define the utility classes for the smooth transition effect */
+      .smooth-hide {
+        max-height: 0;
+        opacity: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        overflow: hidden;
+      }
+      .smooth-show {
+        /* Increased max-height slightly to ensure it contains content before scroll takes over */
+        max-height: 600px;
+        opacity: 1;
+      }
+      /* Base arrow style (downward by default) */
+      .arrow {
+        transition-property: transform;
+        transition-duration: 300ms;
+        transition-timing-function: ease-in-out;
+      }
+      /* Rotated state (upward) */
+      .rotated {
+        transform: rotate(180deg);
+      }
+      /* Active Class for Navigation Links */
+      .nav-active {
+        color: #4f46e5; /* Tailwind indigo-600 */
+        font-weight: 600; /* Tailwind font-semibold */
+      }
+      /* Tab Button Base Style for color cleanup */
+      .tab-btn {
+        transition: all 150ms ease-in-out;
+      }
+
+ 

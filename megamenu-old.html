@@ -16,17 +16,384 @@
 
   <body class="bg-white text-gray-800 font-sans">
     <!-- Header -->
-     <section>
-      <header
-      id="header"
-      class="w-full bg-white shadow-lg  top-0 left-0 z-20"
-    >
-      <div class="max-w-7xl mx-auto p-4">
-        <!-- Navbar: MySite (Left) - Nav Links (Center) - Button (Right) -->
-        <nav class="flex items-center justify-between flex-wrap">
-          <!-- 1. Left: MySite Logo/Title -->
-          <!-- <div class="text-2xl font-extrabold text-indigo-700">MySite</div> -->
-           <div class="flex lg:flex-1">
+    <!-- <header class="bg-[#15404e] shadow-sm py-12">
+      
+       
+      <nav
+        aria-label="Global"
+        class="mx-auto flex max-w-7xl bg-white rounded-full items-center justify-between px-6 py-4 lg:px-8"
+      >
+        <div class="flex lg:flex-1">
+          <a href="#" class="-m-1.5 p-1.5">
+            <span class="sr-only">Your Company</span>
+            <span class="text-2xl font-extrabold text-blue-900">
+              <img src="images/logo.jpg" alt="Hero Image" class="object-cover"
+            /></span>
+          </a>
+        </div>
+        <div class="flex lg:hidden">
+          <button
+            type="button"
+            command="show-modal"
+            commandfor="mobile-menu"
+            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              data-slot="icon"
+              aria-hidden="true"
+              class="size-6"
+            >
+              <path
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <el-popover-group class="hidden lg:flex lg:gap-x-12">
+          <div class="relative">
+            <button
+              popovertarget="desktop-menu-product"
+              class="flex items-center gap-x-1 text-sm/6 font-semibold"
+            >
+              Product
+              <svg
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                data-slot="icon"
+                aria-hidden="true"
+                class="size-5 flex-none text-gray-500"
+              >
+                <path
+                  d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+
+            <el-popover
+              id="desktop-menu-product"
+              anchor="bottom"
+              style="position: absolute; top:-209px"
+              popover
+              class="w-screen max-w-6xl overflow-hidden rounded-3xl bg-gray-100 outline-1 -outline-offset-1 outline-white/10 transition transition-discrete [--anchor-gap:--spacing(3)] backdrop:bg-transparent open:block data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in  "
+            >
+              <div class="p-4 ">
+             
+                <div
+                  class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5"
+                >
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-700/50 group-hover:bg-gray-700"
+                  ></div>
+               
+                  <div class="flex-auto">
+                    <a href="#" class="block font-semibold ">
+                      willow
+                      <span class="absolute inset-0"></span>
+                    </a>
+                    <p class="mt-1 text-gray-400">
+                      Fusce dapibus, tellus ac cursus commodo
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5"
+                >
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-700/50 group-hover:bg-gray-700"
+                  ></div>
+                  <div class="flex-auto">
+                    <a href="#" class="block font-semibold  ">
+                      willow
+                      <span class="absolute inset-0"></span>
+                    </a>
+                    <p class="mt-1 text-gray-400">
+                      Fusce dapibus, tellus ac cursus commodo
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5"
+                >
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-700/50 group-hover:bg-gray-700"
+                  ></div>
+                  <div class="flex-auto">
+                    <a href="#" class="block font-semibold ">
+                      willow
+                      <span class="absolute inset-0"></span>
+                    </a>
+                    <p class="mt-1 text-gray-400">
+                      Fusce dapibus, tellus ac cursus commodo
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5"
+                >
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-700/50 group-hover:bg-gray-700"
+                  ></div>
+                  <div class="flex-auto">
+                    <a href="#" class="block font-semibold  ">
+                      willow
+                      <span class="absolute inset-0"></span>
+                    </a>
+                    <p class="mt-1 text-gray-400">
+                      Fusce dapibus, tellus ac cursus commodo
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5"
+                >
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-700/50 group-hover:bg-gray-700"
+                  ></div>
+                  <div class="flex-auto">
+                    <a href="#" class="block font-semibold  ">
+                      willow
+                      <span class="absolute inset-0"></span>
+                    </a>
+                    <p class="mt-1 text-gray-400">
+                      Fusce dapibus, tellus ac cursus commodo
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="grid grid-cols-2 divide-x divide-white/10 bg-gray-700/50"
+              >
+                <a
+                  href="#"
+                  class="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-white hover:bg-gray-700/50"
+                >
+                  <svg
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    data-slot="icon"
+                    aria-hidden="true"
+                    class="size-5 flex-none text-gray-500"
+                  >
+                    <path
+                      d="M2 10a8 8 0 1 1 16 0 8 8 0 0 1-16 0Zm6.39-2.908a.75.75 0 0 1 .766.027l3.5 2.25a.75.75 0 0 1 0 1.262l-3.5 2.25A.75.75 0 0 1 8 12.25v-4.5a.75.75 0 0 1 .39-.658Z"
+                      clip-rule="evenodd"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                  Watch demo
+                </a>
+                <a
+                  href="#"
+                  class="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-white hover:bg-gray-700/50"
+                >
+                  <svg
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    data-slot="icon"
+                    aria-hidden="true"
+                    class="size-5 flex-none text-gray-500"
+                  >
+                    <path
+                      d="M2 3.5A1.5 1.5 0 0 1 3.5 2h1.148a1.5 1.5 0 0 1 1.465 1.175l.716 3.223a1.5 1.5 0 0 1-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 0 0 6.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 0 1 1.767-1.052l3.223.716A1.5 1.5 0 0 1 18 15.352V16.5a1.5 1.5 0 0 1-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 0 1 2.43 8.326 13.019 13.019 0 0 1 2 5V3.5Z"
+                      clip-rule="evenodd"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                  Contact 
+                </a>
+              </div>
+            </el-popover>
+          </div>
+
+          <a href="#" class="text-sm/6 font-semibold">Resources</a>
+          <a href="#" class="text-sm/6 font-semibold">Pricing</a>
+          <a href="#" class="text-sm/6 font-semibold">About Us</a>
+        </el-popover-group>
+        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+          <button
+            class="bg-[#850a56] text-white text-sm font-semibold px-4 py-2 rounded-full hover:bg-fuchsia-800"
+          >
+            Get Started
+          </button>
+     
+        </div>
+      </nav>
+      <el-dialog>
+        <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+          <div tabindex="0" class="fixed inset-0 focus:outline-none">
+            <el-dialog-panel
+              class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-100 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10"
+            >
+              <div class="flex items-center justify-between">
+                <a href="#" class="-m-1.5 p-1.5">
+                  <span class="sr-only">Alderr</span>
+                  <img
+                    src="images/logo.jpg"
+                    alt="Hero Image"
+                    class="h-8 w-auto"
+                  />
+                 
+                </a>
+                <button
+                  type="button"
+                  command="close"
+                  commandfor="mobile-menu"
+                  class="-m-2.5 rounded-md p-2.5 text-gray-400"
+                >
+                  <span class="sr-only">Close menu</span>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    data-slot="icon"
+                    aria-hidden="true"
+                    class="size-6"
+                  >
+                    <path
+                      d="M6 18 18 6M6 6l12 12"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="mt-6 flow-root">
+                <div class="-my-6 divide-y divide-white/10">
+                  <div class="space-y-2 py-6">
+                    <div class="-mx-3">
+                      <button
+                        type="button"
+                        command="--toggle"
+                        commandfor="products"
+                        class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold hover:bg-white/5"
+                      >
+                        Product
+                        <svg
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          data-slot="icon"
+                          aria-hidden="true"
+                          class="size-5 flex-none in-aria-expanded:rotate-180"
+                        >
+                          <path
+                            d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                            clip-rule="evenodd"
+                            fill-rule="evenodd"
+                          />
+                        </svg>
+                      </button>
+                      <el-disclosure
+                        id="products"
+                        hidden
+                        class="mt-2 block space-y-2"
+                      >
+                        <a
+                          href="#"
+                          class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold   hover:bg-white/5"
+                          >willow</a
+                        >
+                        <a
+                          href="#"
+                          class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold   hover:bg-white/5"
+                          >willow</a
+                        >
+                        <a
+                          href="#"
+                          class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold   hover:bg-white/5"
+                          >willow</a
+                        >
+                        <a
+                          href="#"
+                          class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold   hover:bg-white/5"
+                          >willow</a
+                        >
+                        <a
+                          href="#"
+                          class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold hover:bg-white/5"
+                          >willow</a
+                        >
+                        <a
+                          href="#"
+                          class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold   hover:bg-white/5"
+                          >willow</a
+                        >
+                        <a
+                          href="#"
+                          class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold  hover:bg-white/5"
+                          >willow</a
+                        >
+                        <a
+                          href="#"
+                          class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold  hover:bg-white/5"
+                          >willow</a
+                        >
+                        <a
+                          href="#"
+                          class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold   hover:bg-white/5"
+                          >willow</a
+                        >
+                        <a
+                          href="#"
+                          class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold  hover:bg-white/5"
+                          >willow</a
+                        >
+                    
+                      </el-disclosure>
+                    </div>
+                    <a
+                      href="#"
+                      class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold   hover:bg-white/5"
+                      >Resources</a
+                    >
+                    <a
+                      href="#"
+                      class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold   hover:bg-white/5"
+                      >Pricing</a
+                    >
+                    <a
+                      href="#"
+                      class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold   hover:bg-white/5"
+                      >About Us</a
+                    >
+                  </div>
+                  <div class="py-6">
+                    <button
+                      class="bg-[#850a56] text-white text-sm font-semibold px-4 py-2 rounded-full hover:bg-fuchsia-800"
+                    >
+                      Get Started
+                    </button>
+               
+                  </div>
+                </div>
+              </div>
+            </el-dialog-panel>
+          </div>
+        </dialog>
+      </el-dialog>
+
+    </header> -->
+
+    <!-- Hero Section -->
+    <section class="bg-[#15404e] text-white relative overflow-hidden">
+
+      <header class=" mb-12 z-50 relative text-gray-900 bg-white">
+      
+       
+      <nav
+        aria-label="Global"
+        class="mx-auto flex max-w-7xl bg-white  items-center justify-between px-6 py-4 lg:px-8"
+      >
+        <div class="flex lg:flex-1">
           <a href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">Your Company</span>
             <span class="text-2xl font-extrabold text-blue-900">
@@ -34,451 +401,311 @@
             /></span>
           </a>
         </div>
-
-          <!-- 2. Center: Desktop Navigation Links (Centered) -->
-          <div
-            id="desktop-menu"
-            class="hidden sm:flex sm:items-center sm:space-x-4 mx-auto"
-          >
-            <button
-              class="nav-toggle-btn flex items-center space-x-1 text-gray-700 hover:text-indigo-600 font-medium transition duration-150"
-              data-link="Home"
-            >
-              <span>Alignment Platforms</span
-              ><svg
-                class="arrow h-4 w-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </button>
-            <button
-              class="nav-toggle-btn flex items-center space-x-1 text-gray-700 hover:text-indigo-600 font-medium transition duration-150"
-              data-link="About"
-            >
-              <span>Why Alderr</span
-              ><svg
-                class="arrow h-4 w-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </button>
-            <button
-              class="nav-toggle-btn flex items-center space-x-1 text-gray-700 hover:text-indigo-600 font-medium transition duration-150"
-              data-link="Product"
-            >
-              <span>Who We Help</span
-              ><svg
-                class="arrow h-4 w-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </button>
-            <button
-              class="nav-toggle-btn flex items-center space-x-1 text-gray-700 hover:text-indigo-600 font-medium transition duration-150"
-              data-link="Service"
-            >
-              <span>Resources</span
-              ><svg
-                class="arrow h-4 w-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </button>
-            <button
-              class="nav-toggle-btn flex items-center space-x-1 text-gray-700 hover:text-indigo-600 font-medium transition duration-150"
-              data-link="Pricing"
-            >
-              <span>Company / Investors</span
-              ><svg
-                class="arrow h-4 w-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </button>
-          </div>
-
-          <!-- 3. Right: Mobile Button and Get Started Button -->
-          <div class=" sm:hidden lg:flex lg:flex-1 lg:justify-end">
-            <!-- Desktop CTA Button -->
-            <button
-              class="bg-[#850a56] text-white text-sm font-semibold px-4 py-2 rounded-full hover:bg-fuchsia-800 transition duration-150 hidden sm:block"
-            >
-              Get Started
-            </button>
-            <!-- Mobile Menu Toggle -->
-            <button
-              id="mobile-menu-button"
-              class="sm:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100 focus:outline-none"
-            >
-              <svg
-                class="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            </button>
-          </div>
-        </nav>
-
-        <!-- Mobile Navigation Links (Unchanged) -->
-        <div
-          id="mobile-menu"
-          class="hidden sm:hidden w-full pt-2 border-t mt-2"
-        >
+        <div class="flex lg:hidden">
           <button
-            class="nav-toggle-btn block w-full text-left p-2 text-gray-700 hover:bg-gray-100 transition duration-150"
-            data-link="Home"
+            type="button"
+            command="show-modal"
+            commandfor="mobile-menu"
+            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
           >
-            <span class="flex items-center justify-between"
-              ><span>Alignment Platforms</span
-              ><svg
-                class="arrow h-4 w-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                /></svg ></span>
-          </button>
-          <button
-            class="nav-toggle-btn block w-full text-left p-2 text-gray-700 hover:bg-gray-100 transition duration-150"
-            data-link="About"
-          >
-            <span class="flex items-center justify-between"
-              ><span>Why Alderr</span
-              ><svg
-                class="arrow h-4 w-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                /></svg ></span>
-          </button>
-          <button
-            class="nav-toggle-btn block w-full text-left p-2 text-gray-700 hover:bg-gray-100 transition duration-150"
-            data-link="Product"
-          >
-            <span class="flex items-center justify-between"
-              ><span>Who We Help</span
-              ><svg
-                class="arrow h-4 w-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                /></svg ></span>
-          </button>
-          <button
-            class="nav-toggle-btn block w-full text-left p-2 text-gray-700 hover:bg-gray-100 transition duration-150"
-            data-link="Service"
-          >
-            <span class="flex items-center justify-between"
-              ><span>Resources</span
-              ><svg
-                class="arrow h-4 w-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                /></svg ></span>
-          </button>
-          <button
-            class="nav-toggle-btn block w-full text-left p-2 text-gray-700 hover:bg-gray-100 transition duration-150"
-            data-link="Pricing"
-          >
-            <span class="flex items-center justify-between"
-              ><span>Company / Investors</span
-              ><svg
-                class="arrow h-4 w-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                /></svg ></span>
-          </button>
-        </div>
-      </div>
-    </header>
-
-    <!-- Desktop Page Wrapper. We add 'relative' here so the absolute-positioned panel is contained within. -->
-    <div id="desktop-page-wrapper" class="  "  >
-      <!-- The Panel HTML. 'relative' class is removed here and added/removed dynamically by JS -->
-      <div
-        id="toggleDiv"
-        class="w-full border border-yellow-300 shadow-xl overflow-hidden smooth-hide transition-all duration-500 ease-in-out bg-white sm:rounded-none sm:border-x-0"
-        role="region"
-      >
-        <!-- INNER WRAPPER: Constrains and centers the panel's content on desktop -->
-        <div class="max-w-7xl mx-auto py-6">
-          <!-- Close Button: Positioned absolute relative to the full-width panel. -->
-          <button
-            id="closeButton"
-            class="absolute top-2 right-4 p-1 text-gray-400 hover:text-gray-600 focus:outline-none rounded-full transition-colors z-30"
-            aria-label="Close"
-          >
+            <span class="sr-only">Open main menu</span>
             <svg
-              class="h-6 w-6"
-              fill="none"
               viewBox="0 0 24 24"
+              fill="none"
               stroke="currentColor"
+              stroke-width="1.5"
+              data-slot="icon"
+              aria-hidden="true"
+              class="size-6"
             >
               <path
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                stroke-width="2"
-                d="M6 18L18 6M6 6l12 12"
               />
             </svg>
           </button>
-
-          <div class="px-4">
-            <!-- Custom Content Container for "About" -->
-            <div id="about-content" class="text-gray-600 hidden pt-4">
-              <h3 class="text-xl font-semibold text-indigo-700 mb-4">
-                Why Alderr
-              </h3>
-              <p class="mb-4">
-                This content is specific to the **About** link and does not use
-                tabs. The items below now have a hover effect.
-              </p>
-
-              <ul class="space-y-1">
-                <li>
-                  <a
-                    href="#"
-                    class="block w-full p-2 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
-                  >
-                    Our Mission
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block w-full p-2 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
-                  >
-                    Our History
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block w-full p-2 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
-                  >
-                    Team Members
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <!-- Tabbed Content Container for ALL other links -->
-            <div id="tabbed-content" class="flex flex-col sm:flex-row pt-4">
-              <!-- Tab Buttons Sidebar/Header (Horizontal on mobile, vertical on desktop) -->
-              <div
-                id="tabButtons"
-                class="flex flex-row overflow-x-auto space-x-2 pb-2 border-b border-gray-200 sm:flex-col sm:space-y-0 sm:space-x-0  sm:min-w-[220px] sm:border-r sm:border-b-0"
+        </div>
+        <el-popover-group class="hidden lg:flex lg:gap-x-12">
+          <div class="relative">
+            <button
+              popovertarget="desktop-menu-product"
+              class="flex items-center gap-x-1 text-sm/6 font-semibold"
+            >
+              Product
+              <svg
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                data-slot="icon"
+                aria-hidden="true"
+                class="size-5 flex-none text-gray-500"
               >
-                <button
-                  class="tab-btn px-4 py-6 text-sm font-medium text-left whitespace-nowrap sm:w-full"
-                  data-tab="tab1"
-                >
-                  Active Practice
-                </button>
-                <button
-                  class="tab-btn px-4 py-6 text-sm font-medium text-left whitespace-nowrap sm:w-full"
-                  data-tab="tab2"
-                >
-                  Active Patient
-                </button>
-                <button
-                  class="tab-btn px-4 py-6 text-sm font-medium text-left whitespace-nowrap sm:w-full"
-                  data-tab="tab3"
-                >
-                  Active Work Flow
-                </button>
-              </div>
-
-              <!-- Tab Content Wrapper (Max height and scrollable on both mobile and desktop) -->
-              <div
-                id="tabContentWrapper"
-                class="flex-grow mt-4 sm:mt-0 transition-colors duration-300 max-h-[300px] sm:max-h-[400px] overflow-y-auto"
-              >
-                <div id="tabContent" class="w-full p-4">
-                  <div id="tab1" class="tab-pane">
-                    <h3 class="text-xl font-semibold mb-4">
-                      Selected Link: <span id="nav-link-title">
-
-Alignment Platforms</span>
-                    </h3>
-
-                    <!-- 3-Column Layout for Home/Tab1 -->
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                      <!-- Column 1 -->
-                      <div class="p-4 bg-[#BAE1EE] rounded-lg">
-                        <h4 class="font-bold text-lg mb-2 text-indigo-800">
-                          Feature 1: Real-Time Data
-                        </h4>
-                        <p class="text-sm">
-                          Access and monitor your critical data streams in
-                          real-time, ensuring you always have the most current
-                          information at your fingertips for immediate
-                          decision-making.
-                        </p>
-                      </div>
-                      <!-- Column 2 -->
-                      <div class="p-4 bg-indigo-100/50 rounded-lg">
-                        <h4 class="font-bold text-lg mb-2 text-indigo-800">
-                          Feature 2: Dynamic Reporting
-                        </h4>
-                        <p class="text-sm">
-                          Generate comprehensive and customizable reports
-                          instantly. Filter, sort, and visualize metrics exactly
-                          how you need them, tailored to your workflow.
-                        </p>
-                      </div>
-                      <!-- Column 3 -->
-                      <div class="p-4 bg-indigo-100/50 rounded-lg">
-                        <h4 class="font-bold text-lg mb-2 text-indigo-800">
-                          Feature 3: Secure Storage
-                        </h4>
-                        <p class="text-sm">
-                          Your information is protected with enterprise-grade
-                          security protocols. Benefit from encrypted, redundant
-                          cloud storage with guaranteed uptime and reliability.
-                        </p>
-                      </div>
-                    </div>
-
-                    <!-- Added content to trigger desktop scrollbar when content overflows the 400px limit -->
-                    <div
-                      class="mt-6 p-4 bg-indigo-100/50 rounded-lg col-span-1 md:col-span-3"
-                    >
-                      <h4 class="font-bold text-lg mb-2 text-indigo-800">
-                        Further Details on System Architecture
-                      </h4>
-                  
-                   
-                    
-                    </div>
-                    <!-- End added content -->
-                  </div>
-
-                  <div id="tab2" class="tab-pane hidden">
-                    <h3 class="text-xl font-semibold mb-2">Tab 2: Services</h3>
-                    <p class="text-base">
-                      This content area gets the light **Pink** background to
-                      match the active tab.
-                    </p>
-                  </div>
-                  <div id="tab3" class="tab-pane hidden">
-                    <h3 class="text-xl font-semibold mb-2">Tab 3: Support</h3>
-                    <p class="text-base">
-                      This content area gets the light **Amber** background to
-                      match the active tab.
-                    </p>
-                  </div>
+                <path
+                  d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+<div class="static max-w-full bg-white relative ">
+            <el-popover
+              id="desktop-menu-product"
+              anchor="bottom"
+          
+              popover
+              class="w-screen bg-white  absolute top-10 max-w-full overflow-hidden bg-gray-100 outline-1 -outline-offset-1 outline-white/10 transition transition-discrete [--anchor-gap:--spacing(3)] backdrop:bg-transparent open:block data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in"
+            >
+              <div class="px-24 py-8 max-w-7xl w-screen mx-auto bg-[#EAF5FE]">
+           
+       <div class="grid md:grid-cols-4 gap-8 h-[350px]">
+        <!-- PRODUCTS (Tabs) -->
+        <div class="text-left">
+          <h4 class="text-xs uppercase text-gray-500 mb-8">
+            Products
+          </h4>
+          <ul class="space-y-8">
+            <li>
+              <button data-tab="willow" class="tab-btn text-left flex items-start space-x-2 hcolor hover:text-teal-700 font-medium text-teal-700">
+                <span><img src="images/menu/willow.svg" /></span>
+                <div>
+                  <p class=" ">Activ Practice</p>
+                  <p class="text-xs text-gray-500">Billing Made Transactional, Then Free</p>
                 </div>
-              </div>
+              </button>
+            </li>
+            <li>
+              <button data-tab="abacus" class="tab-btn text-left flex items-start space-x-2 hcolor hover:text-teal-700 font-medium">
+                <span><img src="images/menu/abacus.svg" /></span>
+                <div>
+                  <p>Activ Patient</p>
+                  <p class="text-xs text-gray-500">Financial Clarity for Every Family - $10/Month</p>
+                </div>
+              </button>
+            </li>
+            <li>
+              <button data-tab="sdocs" class="tab-btn text-left flex items-start space-x-2 hcolor hover:text-teal-700 font-medium">
+                <span><img src="images/menu/sdocs.svg" /></span>
+                <div>
+                  <p>Activ Work Flow </p>
+                  <p class="text-xs text-gray-500">Document Management</p>
+                </div>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- BY SPECIALTY -->
+        <div>
+          <h4 class="text-xs  uppercase text-gray-500 mb-8">
+            Features</h4>
+          <div id="specialty" class="space-y-6 hcolor"><p class=" font-medium">For Practices</p><p class="hcolor font-medium">For Billing Companies</p><p class="hcolor font-medium">For Patients</p></div>
+        </div>
+
+        <!-- BY OUTCOME -->
+        <div>
+          <h4 class="text-xs   uppercase text-gray-500 mb-4">
+           FOR
+          </h4>
+          <div id="outcome" class="text-md space-y-6 hcolor"><p class="text-md hcolor">Streamline healthcare admin, workflows, financial management using AI.</p><p class="text-md hcolor">Optimize Your Healthcare Workflow.</p><p class="text-sm hcolor">Simplify the way you handle documents, records, and compliance.</p></div>
+        </div>
+
+        
+
+        <!-- FEATURED ARTICLE -->
+        <div class="border-l pl-6">
+          <h4 class="text-xs   uppercase text-gray-500 mb-8">
+            Featured Article
+          </h4>
+          <div class="flex flex-col space-y-3">
+            <img id="article-img" src="images/subpage1/slider_doctor2.PNG" alt="Featured" class="rounded-lg w-full h-32 object-cover">
+            <div>
+              <h5 id="article-title" class="font-semibold text-gray-800">Willow in Action: Simplifying Healthcare</h5>
+              <p id="article-desc" class="text-sm text-gray-500">Discover how AI transforms everyday healthcare operations.</p>
+              <a href="#" class="text-teal-700 text-sm font-semibold inline-flex items-center space-x-1">
+                <span>Read more</span> <span>→</span>
+              </a>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- This is the centered anchor point for the rest of the page's content -->
-       
-    </div>
 
-     </section>
-     
+                
+          
+              </div>
+              
+            </el-popover>
+            </div>
+          </div>
 
-    <!-- Hero Section -->
-    <section class="bg-[#15404e] text-white relative overflow-hidden">
- 
+          <a href="#" class="text-sm/6 font-semibold">Resources</a>
+          <a href="#" class="text-sm/6 font-semibold">Pricing</a>
+          <a href="#" class="text-sm/6 font-semibold">About Us</a>
+        </el-popover-group>
+        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+          <button
+            class="bg-[#850a56] text-white text-sm font-semibold px-4 py-2 rounded-full hover:bg-fuchsia-800"
+          >
+            Get Started
+          </button>
+      
+        </div>
+      </nav>
+      <el-dialog>
+        <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+          <div tabindex="0" class="fixed inset-0 focus:outline-none">
+            <el-dialog-panel
+              class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-100 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10"
+            >
+              <div class="flex items-center justify-between">
+                <a href="#" class="-m-1.5 p-1.5">
+                  <span class="sr-only">Alderr</span>
+                  <img
+                    src="images/logo.jpg"
+                    alt="Hero Image"
+                    class="h-8 w-auto"
+                  />
+             
+                </a>
+                <button
+                  type="button"
+                  command="close"
+                  commandfor="mobile-menu"
+                  class="-m-2.5 rounded-md p-2.5 text-gray-400"
+                >
+                  <span class="sr-only">Close menu</span>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    data-slot="icon"
+                    aria-hidden="true"
+                    class="size-6"
+                  >
+                    <path
+                      d="M6 18 18 6M6 6l12 12"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="mt-6 flow-root">
+                <div class="-my-6 divide-y divide-white/10">
+                  <div class="space-y-2 py-6">
+                    <div class="-mx-3">
+                      <button
+                        type="button"
+                        command="--toggle"
+                        commandfor="products"
+                        class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold hover:bg-white/5"
+                      >
+                        Product
+                        <svg
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          data-slot="icon"
+                          aria-hidden="true"
+                          class="size-5 flex-none in-aria-expanded:rotate-180"
+                        >
+                          <path
+                            d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                            clip-rule="evenodd"
+                            fill-rule="evenodd"
+                          />
+                        </svg>
+                      </button>
+                      <el-disclosure
+                        id="products"
+                        hidden
+                        class="mt-2 block space-y-2"
+                      >
+                        <a
+                          href="#"
+                          class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold   hover:bg-white/5"
+                          >willow</a
+                        >
+                        <a
+                          href="#"
+                          class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold   hover:bg-white/5"
+                          >willow</a
+                        >
+                        <a
+                          href="#"
+                          class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold   hover:bg-white/5"
+                          >willow</a
+                        >
+                        <a
+                          href="#"
+                          class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold   hover:bg-white/5"
+                          >willow</a
+                        >
+                        <a
+                          href="#"
+                          class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold hover:bg-white/5"
+                          >willow</a
+                        >
+                        <a
+                          href="#"
+                          class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold   hover:bg-white/5"
+                          >willow</a
+                        >
+                        <a
+                          href="#"
+                          class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold  hover:bg-white/5"
+                          >willow</a
+                        >
+                        <a
+                          href="#"
+                          class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold  hover:bg-white/5"
+                          >willow</a
+                        >
+                        <a
+                          href="#"
+                          class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold   hover:bg-white/5"
+                          >willow</a
+                        >
+                        <a
+                          href="#"
+                          class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold  hover:bg-white/5"
+                          >willow</a
+                        >
+                    
+                      </el-disclosure>
+                    </div>
+                    <a
+                      href="#"
+                      class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold   hover:bg-white/5"
+                      >Resources</a
+                    >
+                    <a
+                      href="#"
+                      class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold   hover:bg-white/5"
+                      >Pricing</a
+                    >
+                    <a
+                      href="#"
+                      class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold   hover:bg-white/5"
+                      >About Us</a
+                    >
+                  </div>
+                  <div class="py-6">
+                    <button
+                      class="bg-[#850a56] text-white text-sm font-semibold px-4 py-2 rounded-full hover:bg-fuchsia-800"
+                    >
+                      Get Started
+                    </button>
+                  
+                  </div>
+                </div>
+              </div>
+            </el-dialog-panel>
+          </div>
+        </dialog>
+      </el-dialog>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </header>
       <div
         class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center px-6"
       >
@@ -508,7 +735,7 @@ Alignment Platforms</span>
           <img
             src="images/subpage1/banner_lady.png"
             alt="Hero Image"
-            class="object-cover z-20"
+            class="object-cover z-50"
           />
         </div>
       </div>
@@ -1268,6 +1495,6 @@ Alignment Platforms</span>
       </div>
     </footer>
     <script src="js/slider.js"></script>
-    <script src="js/mmenu.js"></script>
+    <script src="js/megamenu.js"></script>
   </body>
 </html>
