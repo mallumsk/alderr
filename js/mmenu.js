@@ -35,44 +35,49 @@
         const COLORS = {
           tab1: {
             contentBg: "bg-indigo-50",
-            buttonBg: "bg-indigo-600",
+            buttonBg: "bg-indigo-100",
             contentText: "text-indigo-800",
             titleText: "text-indigo-700",
           },
           tab2: {
             contentBg: "bg-pink-50",
-            buttonBg: "bg-pink-600",
+            buttonBg: "bg-pink-100",
             contentText: "text-pink-800",
             titleText: "text-pink-700",
           },
           tab3: {
             contentBg: "bg-amber-50",
-            buttonBg: "bg-amber-500",
+            buttonBg: "bg-amber-100",
             contentText: "text-amber-800",
             titleText: "text-amber-700",
           },
+          // NEW COLOR SET
+          tab4: { contentBg: 'bg-green-50',
+             buttonBg: 'bg-green-100', 
+             contentText: 'text-green-800', 
+             titleText: 'text-green-700' } ,
         };
 
         const INACTIVE_HOVER_CLASSES = {
-          tab1: "hover:bg-indigo-100",
+          tab1: "hover:bg-sky-100",
           tab2: "hover:bg-pink-100",
           tab3: "hover:bg-amber-100",
+          tab4: "hover:bg-green-100",
         };
 
-        const ALL_BG_CLASSES = ["bg-indigo-50", "bg-pink-50", "bg-amber-50"];
+        const ALL_BG_CLASSES = ['bg-indigo-50', 'bg-pink-50', 'bg-amber-50', 'bg-green-50'];
         const ALL_BUTTON_BG_CLASSES = [
-          "bg-indigo-600",
-          "bg-pink-600",
-          "bg-amber-500",
+          "bg-indigo-200",
+          "bg-pink-200",
+          "bg-amber-200",
+          "bg-green-200",
         ];
         const ALL_TEXT_CLASSES = [
           "text-indigo-800",
           "text-pink-800",
           "text-amber-800",
-          "text-indigo-700",
-          "text-pink-700",
-          "text-amber-700",
-          "text-white",
+          'text-green-800',
+          // "text-white",
         ];
         const ALL_INACTIVE_CLASSES = ["text-gray-700", "hover:bg-gray-100"];
 
@@ -231,7 +236,7 @@
             // Apply the dark active style. No separate hover class is added,
             // so the button color is constant whether active or hovered.
             activeBtn.classList.add(
-              "text-white",
+              "spruce",
               "tab-active",
               colorSet.buttonBg
             );
