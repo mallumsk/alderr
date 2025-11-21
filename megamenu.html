@@ -346,33 +346,51 @@
               <!-- Tab Buttons Sidebar/Header (Horizontal on mobile, vertical on desktop) -->
               <div
                 id="tabButtons"
-                class="flex flex-row overflow-x-auto space-x-2 pb-2 border-b border-gray-200 bg-sky-50 sm:flex-col sm:space-y-0 sm:space-x-0  sm:min-w-[220px] sm:border-r sm:border-b-0"
+                class="flex flex-row overflow-x-auto space-x-0 pb-2 bg-sky-50 sm:flex-col sm:space-y-0 sm:space-x-0 sm:min-w-[320px]   sm:border-b-0"
               >
-                <button
-                  class="tab-btn px-4 py-6  font-medium text-left whitespace-nowrap sm:w-full"
-                  data-tab="tab1"
-                > 
-                 <div class="text-sm flex"><span><img src="images/menu/willow.svg" /></span> <p class="pl-2">Activ Practice</p></div> 
-                  <!-- <div class="text-xs md-block">Billing Made Transactional, Then Free</div> -->
-                </button>
-                <button
-                  class="tab-btn px-4 py-6 text-sm font-medium text-left whitespace-nowrap sm:w-full"
-                  data-tab="tab2"
-                >
-                 <div class="text-sm flex"><span><img src="images/menu/abacus.svg" /></span> <p class="pl-2"> Activ Patient</p></div>
-                </button>
-                <button
-                  class="tab-btn px-4 py-6 text-sm font-medium text-left whitespace-nowrap sm:w-full"
-                  data-tab="tab3"
-                >
-                  <div class="text-sm flex"><span><img src="images/menu/sdocs.svg" /></span> <p class="pl-2">  Activ Workflow</p></div>
-                </button>
-                <button
-                  class="tab-btn px-4 py-6 text-sm font-medium text-left whitespace-nowrap sm:w-full"
-                  data-tab="tab4"
-                >
-                   <div class="text-sm flex"><span><img src="images/menu/willow.svg" /></span> <p class="pl-2">  Activ Benefits</p></div>
-                </button>
+                
+
+                        <button class="tab-btn px-4 py-6 text-sm font-medium text-left whitespace-nowrap sm:w-full" data-tab="tab1"> 
+  <div class="text-sm flex items-center">
+    <span>
+      <img src="/images/menu/willow.svg" alt="sdocs Icon" class="w-5 h-5" />
+    </span>
+    <p class="pl-2">Activ Practice</p>
+  </div> 
+  <div class="text-xs  lg:pl-7 hidden lg:block text-[#b2bad3]">Billing Made Transactional, Then Free</div>  
+</button>
+               
+
+                       <button class="tab-btn px-4 py-6 text-sm font-medium text-left whitespace-nowrap sm:w-full" data-tab="tab2"> 
+  <div class="text-sm flex items-center">
+    <span>
+      <img src="/images/menu/abacus.svg" alt="sdocs Icon" class="w-5 h-5" />
+    </span>
+    <p class="pl-2">Activ Patient</p>
+  </div> 
+  <div class="text-xs lg:pl-7 hidden lg:block text-[#c7a7b9]">Financial Clarity for Every Family - $10/Month</div>  
+</button>
+                
+                   <button class="tab-btn px-4 py-6 text-sm font-medium text-left whitespace-nowrap sm:w-full" data-tab="tab3"> 
+  <div class="text-sm flex items-center">
+    <span>
+      <img src="/images/menu/sdocs.svg" alt="sdocs Icon" class="w-5 h-5" />
+    </span>
+    <p class="pl-2">Activ Workflow</p>
+  </div> 
+  <div class="text-xs   lg:pl-7 hidden lg:block text-[#d1b873]">The coordination layer behind every transaction,</br> every partner, and every promise. -join waitllist</div>  
+</button>
+
+
+                <button class="tab-btn px-4 py-6 text-sm font-medium text-left whitespace-nowrap sm:w-full" data-tab="tab4"> 
+  <div class="text-sm flex items-center">
+    <span>
+      <img src="/images/menu/willow.svg" alt="Willow Icon" class="w-5 h-5 object-cover" />
+    </span>
+    <p class="pl-2">Activ Benefits</p>
+  </div> 
+  <div class="text-xs   lg:pl-7 hidden lg:block text-[#b5cbbc]">Billing Made Transactional, Then Free</div>  
+</button>
               </div>
 
               <!-- Tab Content Wrapper (Max height and scrollable on both mobile and desktop) --> 
@@ -389,9 +407,9 @@ Alignment Platforms</span>
                     </h3>
 
                     <!-- 3-Column Layout for Home/Tab1 -->
-                    <div class="grid grid-cols-1 md:grid-cols-4 gap-6 ">
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-1 ">
                       <!-- Column 1 -->
-                      <div class="p-4  ">
+                      <div class="">
                         <h4 class="text-xs uppercase text-gray-500 mb-4">
                           Features
                         </h4>
@@ -400,7 +418,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-indigo-800 rounded-md transition duration-150"
                   >
                     Transactional Billing, Rebuilt
                   </a>
@@ -408,7 +426,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-indigo-800 rounded-md transition duration-150"
                   >
                     AR Optimization Reimagined
                   </a>
@@ -416,7 +434,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-indigo-800 rounded-md transition duration-150"
                   >
                     Proof in Numbers
                   </a>
@@ -424,7 +442,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-indigo-800 rounded-md transition duration-150"
                   >
                    EMR Your Way
                   </a>
@@ -432,7 +450,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-indigo-800 rounded-md transition duration-150"
                   >
                    Functional Plug-Ins
                   </a>
@@ -440,7 +458,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-indigo-800 rounded-md transition duration-150"
                   >
                     Patient Alignment
                   </a>
@@ -448,7 +466,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-indigo-800 rounded-md transition duration-150"
                   >
                     The Normal Stuff
                   </a>
@@ -456,7 +474,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-indigo-800 rounded-md transition duration-150"
                   >
                    Free Billing Is Possible
                   </a>
@@ -466,7 +484,7 @@ Alignment Platforms</span>
                         
                       </div>
                       <!-- Column 2 -->
-                      <div class="p-4  ">
+                      <div class="border-l border-dashed border-indigo-200 pl-4">
                         <h4 class="text-xs uppercase text-gray-500 mb-4">
                           For
                         </h4>
@@ -474,7 +492,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-indigo-800 rounded-md transition duration-150"
                   >
                     Solo Providers
                   </a>
@@ -482,7 +500,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-indigo-800 rounded-md transition duration-150"
                   >
                     Group Practices
                   </a>
@@ -490,7 +508,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-indigo-800 rounded-md transition duration-150"
                   >
                     New Clinics
                   </a>
@@ -498,7 +516,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-indigo-800 rounded-md transition duration-150"
                   >
                   Billing Companies
                   </a>
@@ -507,7 +525,7 @@ Alignment Platforms</span>
               </ul>
                       </div>
                       <!-- Column 3 -->
-                      <div class="p-4  ">
+                      <div class="border-l border-dashed border-indigo-200 pl-4">
                         <h4 class="text-xs uppercase text-gray-500 mb-4">
                           Pricing
                         </h4>
@@ -515,7 +533,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-indigo-800 rounded-md transition duration-150"
                   >
                     Transactional First/Then Free
                   </a>
@@ -523,7 +541,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-indigo-800 rounded-md transition duration-150"
                   >
                     Savings Calculator
                   </a>
@@ -535,8 +553,8 @@ Alignment Platforms</span>
 
 
 
-<div class="p-4  ">
-                      <div class="border-l pl-6">
+<div class=" ">
+                      <div class="border-l border-dashed border-indigo-200 pl-4">
           <h4 class="text-xs uppercase text-gray-500 mb-4">
             Featured Article
           </h4>
@@ -570,7 +588,7 @@ Alignment Platforms</span>
                   <div id="tab2" class="tab-pane hidden">
                      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 ">
                       <!-- Column 1 -->
-                      <div class="p-4  ">
+                      <div class=" ">
                         <h4 class="text-xs uppercase text-gray-500 mb-4">
                           For You
                         </h4>
@@ -579,7 +597,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-pink-800 rounded-md transition duration-150"
                   >
                     Patients, Families & Caregivers
                   </a>
@@ -587,7 +605,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-pink-800 rounded-md transition duration-150"
                   >
                     Step-by-Step Walkthrough
                   </a>
@@ -595,7 +613,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-pink-800 rounded-md transition duration-150"
                   >
                     Real Examples
                   </a>
@@ -603,7 +621,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-pink-800 rounded-md transition duration-150"
                   >
                    Data Safety 
                   </a>
@@ -613,7 +631,7 @@ Alignment Platforms</span>
                         
                       </div>
                       <!-- Column 2 -->
-                      <div class="p-4  ">
+                      <div class="border-l border-dashed border-pink-200 pl-4">
                         <h4 class="text-xs uppercase text-gray-500 mb-4">
                           How Employers Can Help
                         </h4>
@@ -621,7 +639,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-pink-800 rounded-md transition duration-150"
                   >
                     HR Benefit Integration
                   </a>
@@ -629,7 +647,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-pink-800 rounded-md transition duration-150"
                   >
                    Reduce Premium Creep
                   </a>
@@ -639,7 +657,7 @@ Alignment Platforms</span>
               </ul>
                       </div>
                       <!-- Column 3 -->
-                      <div class="p-4  ">
+                      <div class="border-l border-dashed border-pink-200 pl-4">
                         <h4 class="text-xs uppercase text-gray-500 mb-4">
                           Why It Matters
                         </h4>
@@ -647,7 +665,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-pink-800 rounded-md transition duration-150"
                   >
                     What’s a Credit Balance?
                   </a>
@@ -655,7 +673,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-pink-800 rounded-md transition duration-150"
                   >
                     Why Wait to Pay a Bill?
                   </a>
@@ -663,7 +681,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-pink-800 rounded-md transition duration-150"
                   >
                     Denials Aren’t Always Denials.
                   </a>
@@ -671,7 +689,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-pink-800 rounded-md transition duration-150"
                   >
                    Statements Aren’t Always Statements.
                   </a>
@@ -679,7 +697,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-pink-800 rounded-md transition duration-150"
                   >
                    Premiums keep rising 
                   </a>
@@ -687,7 +705,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-pink-800 rounded-md transition duration-150"
                   >
                     Medical Debt Is the #1 Cause of Bankruptcy.
                   </a>
@@ -695,7 +713,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-pink-800 rounded-md transition duration-150"
                   >
                     Learn More (blog w/ product tags)
                   </a>
@@ -705,8 +723,8 @@ Alignment Platforms</span>
                       </div>
 
                                <!-- column 4-->
-<div class="p-4  ">
-                    <div class="border-l pl-6">
+<div class=" ">
+                    <div class="border-l border-dashed border-pink-200 pl-4">
           <h4 class="text-xs uppercase text-gray-500 mb-4">
             Featured Article
           </h4>
@@ -732,7 +750,7 @@ Alignment Platforms</span>
 
                     <div class="grid grid-cols-1 md:grid-cols-4 gap-6 ">
                       <!-- Column 1 -->
-                      <div class="p-4  ">
+                      <div class=" ">
                         <h4 class="text-xs uppercase text-gray-500 mb-4">
                        Management Centralized 
                         </h4>
@@ -741,7 +759,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-amber-800 rounded-md transition duration-150"
                   >
                     Command & Workflow Engine (Full RCM)
                   </a>
@@ -749,7 +767,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-amber-800 rounded-md transition duration-150"
                   >
                     Self-Auditing QA 
                   </a>
@@ -757,7 +775,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-amber-800 rounded-md transition duration-150"
                   >
                    Communication Layer
                   </a>
@@ -765,7 +783,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-amber-800 rounded-md transition duration-150"
                   >
                    Proof in Numbers
                   </a>
@@ -773,7 +791,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-amber-800 rounded-md transition duration-150"
                   >
                   Prioritization Logic
                   </a>
@@ -781,7 +799,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-amber-800 rounded-md transition duration-150"
                   >
                     Multi-Org Architecture
                   </a>
@@ -789,7 +807,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-amber-800 rounded-md transition duration-150"
                   >
                     Data Inflows
                   </a>
@@ -797,7 +815,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-amber-800 rounded-md transition duration-150"
                   >
                    The Normal Stuff
                   </a>
@@ -807,7 +825,7 @@ Alignment Platforms</span>
                         
                       </div>
                       <!-- Column 2 -->
-                      <div class="p-4  ">
+                      <div class="border-l border-dashed border-amber-300 pl-4">
                         <h4 class="text-xs uppercase text-gray-500 mb-4">
                           Partners
                         </h4>
@@ -815,7 +833,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-amber-800 rounded-md transition duration-150"
                   >
                     Billing Firms
                   </a>
@@ -823,7 +841,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-amber-800 rounded-md transition duration-150"
                   >
                     Global BPOs
                   </a>
@@ -831,7 +849,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-amber-800 rounded-md transition duration-150"
                   >
                    CBOs & Med to Large Practices
                   </a>
@@ -841,7 +859,7 @@ Alignment Platforms</span>
               </ul>
                       </div>
                       <!-- Column 3 -->
-                      <div class="p-4  ">
+                      <div class="border-l border-dashed border-amber-300 pl-4">
                         <h4 class="text-xs uppercase text-gray-500 mb-4">
                           Resources
                         </h4>
@@ -849,7 +867,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-amber-800 rounded-md transition duration-150"
                   >
                     Blog
                   </a>
@@ -857,7 +875,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-amber-800 rounded-md transition duration-150"
                   >
                     Case Studies
                   </a>
@@ -865,7 +883,7 @@ Alignment Platforms</span>
                     <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-amber-800 rounded-md transition duration-150"
                   >
                     Security & Compliance
                   </a>
@@ -876,10 +894,10 @@ Alignment Platforms</span>
                       </div>
 
                       <!-- Column 4 -->
-                      <div class="p-4  ">
+                      <div class="">
                        
-                        <div class="border-l pl-6">
-          <h4 class="text-xs   uppercase text-gray-500 mb-4">
+                        <div class=" border-l border-dashed border-amber-300 pl-4">
+          <h4 class="text-xs uppercase text-gray-500 mb-4">
             Featured Article
           </h4>
           <div class="flex flex-col space-y-3">
@@ -914,7 +932,7 @@ Alignment Platforms</span>
 
                     <div class="grid grid-cols-1 md:grid-cols-4 gap-6 ">
                       <!-- Column 1 -->
-                      <div class="p-4  ">
+                      <div class="  ">
                         <h4 class="text-xs uppercase text-gray-500 mb-4">
                        Management Centralized 
                         </h4>
@@ -923,7 +941,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-green-800 rounded-md transition duration-150"
                   >
                     Command & Workflow Engine (Full RCM)
                   </a>
@@ -931,7 +949,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-green-800 rounded-md transition duration-150"
                   >
                     Self-Auditing QA 
                   </a>
@@ -939,7 +957,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-green-800 rounded-md transition duration-150"
                   >
                    Communication Layer
                   </a>
@@ -947,7 +965,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-green-800 rounded-md transition duration-150"
                   >
                    Proof in Numbers
                   </a>
@@ -955,7 +973,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-green-800 rounded-md transition duration-150"
                   >
                   Prioritization Logic
                   </a>
@@ -963,7 +981,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-green-800 rounded-md transition duration-150"
                   >
                     Multi-Org Architecture
                   </a>
@@ -971,7 +989,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-green-800 rounded-md transition duration-150"
                   >
                     Data Inflows
                   </a>
@@ -979,7 +997,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-green-800 rounded-md transition duration-150"
                   >
                    The Normal Stuff
                   </a>
@@ -989,7 +1007,7 @@ Alignment Platforms</span>
                         
                       </div>
                       <!-- Column 2 -->
-                      <div class="p-4  ">
+                      <div class="border-l border-dashed border-green-300 pl-4 ">
                         <h4 class="text-xs uppercase text-gray-500 mb-4">
                           Partners
                         </h4>
@@ -997,7 +1015,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-green-800 rounded-md transition duration-150"
                   >
                     Billing Firms
                   </a>
@@ -1005,7 +1023,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-green-800 rounded-md transition duration-150"
                   >
                     Global BPOs
                   </a>
@@ -1013,7 +1031,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-green-800 rounded-md transition duration-150"
                   >
                    CBOs & Med to Large Practices
                   </a>
@@ -1023,7 +1041,7 @@ Alignment Platforms</span>
               </ul>
                       </div>
                       <!-- Column 3 -->
-                      <div class="p-4  ">
+                      <div class="border-l border-dashed border-green-300 pl-4">
                         <h4 class="text-xs uppercase text-gray-500 mb-4">
                           Resources
                         </h4>
@@ -1031,7 +1049,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-green-800 rounded-md transition duration-150"
                   >
                     Blog
                   </a>
@@ -1039,7 +1057,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-green-800 rounded-md transition duration-150"
                   >
                     Case Studies
                   </a>
@@ -1047,7 +1065,7 @@ Alignment Platforms</span>
                     <li>
                   <a
                     href="#"
-                    class="block w-full p-1 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-1 text-gray-700 hover:text-green-800 rounded-md transition duration-150"
                   >
                     Security & Compliance
                   </a>
@@ -1058,8 +1076,8 @@ Alignment Platforms</span>
                       </div>
 
                       <!-- Column 4 -->
-                      <div class="p-4  ">
-                      <div class="border-l pl-6">
+                      <div class="">
+                      <div class="border-l border-dashed border-green-300 pl-4">
           <h4 class="text-xs uppercase text-gray-500 mb-4">
             Featured Article
           </h4>

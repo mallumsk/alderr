@@ -35,27 +35,27 @@
         const COLORS = {
           tab1: {
             contentBg: "bg-indigo-50",
-            buttonBg: "bg-indigo-100",
+            buttonBg: "bg-indigo-50",
             contentText: "text-indigo-800",
-            titleText: "text-indigo-700",
+            titleText: "text-indigo-400",
           },
           tab2: {
             contentBg: "bg-pink-50",
-            buttonBg: "bg-pink-100",
+            buttonBg: "bg-pink-50",
             contentText: "text-pink-800",
-            titleText: "text-pink-700",
+            titleText: "text-pink-400",
           },
           tab3: {
             contentBg: "bg-amber-50",
-            buttonBg: "bg-amber-100",
+            buttonBg: "bg-amber-50",
             contentText: "text-amber-800",
-            titleText: "text-amber-700",
+            titleText: "text-amber-400",
           },
           // NEW COLOR SET
           tab4: { contentBg: 'bg-green-50',
-             buttonBg: 'bg-green-100', 
+             buttonBg: 'bg-green-50', 
              contentText: 'text-green-800', 
-             titleText: 'text-green-700' } ,
+             titleText: 'text-green-400' } ,
         };
 
         const INACTIVE_HOVER_CLASSES = {
