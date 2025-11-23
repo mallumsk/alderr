@@ -52,6 +52,10 @@ p {font-family: poppins, sans-serif;}
 .bg-black-90 { background-color: #343434; }
 .border-black-90 { border-color: #343434; }
 
+.onyx { color: #707070; }
+.bg-onyx { background-color: #707070; }   
+.border-onyx { border-color: #707070;}    
+
 .warm-grey { color: #ECEAE6; }
 .bg-warm-grey { background-color: #ECEAE6; }
 .border-warm-grey { border-color: #ECEAE6; }
@@ -98,5 +102,19 @@ p {font-family: poppins, sans-serif;}
       .tab-btn {
         transition: all 150ms ease-in-out;
       }
+
+/* Tab title (main label) and subtitle colors for mega-menu tabs */
+/* Title: #15404E, Subtitle/secondary text: #343434 */
+/* #tabButtons .tab-btn > .text-sm > p {
+  color: #15404E !important;
+}
+#tabButtons .tab-btn .text-xs {
+  color: #707070 !important;
+} */
+
+/* Also apply to mobile/tab-button variants that may not use the exact same markup */
+/* .tab-btn p, .tab-btn .subtitle, .nav-toggle-btn .subtitle {
+  color: #707070 !important;
+} */
 
  

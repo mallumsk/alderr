@@ -32,23 +32,37 @@
         let activeNavButton = null;
 
         // Define all colors associated with each tab (unchanged)
-        // Keep color *text* settings but remove any background utilities so
-        // tabs and the tab content wrapper remain white.
-        // Remove colored text utilities; keep backgrounds empty. We'll
-        // use 'spruce' for active elements and neutral gray for content.
         const COLORS = {
-          tab1: { contentBg: '', buttonBg: '', contentText: '', titleText: '' },
-          tab2: { contentBg: '', buttonBg: '', contentText: '', titleText: '' },
-          tab3: { contentBg: '', buttonBg: '', contentText: '', titleText: '' },
-          tab4: { contentBg: '', buttonBg: '', contentText: '', titleText: '' },
+          tab1: {
+            contentBg: "bg-indigo-50",
+            buttonBg: "bg-indigo-50",
+            contentText: "text-indigo-800",
+            titleText: "text-indigo-400",
+          },
+          tab2: {
+            contentBg: "bg-pink-50",
+            buttonBg: "bg-pink-50",
+            contentText: "text-pink-800",
+            titleText: "text-pink-400",
+          },
+          tab3: {
+            contentBg: "bg-amber-50",
+            buttonBg: "bg-amber-50",
+            contentText: "text-amber-800",
+            titleText: "text-amber-400",
+          },
+          // NEW COLOR SET
+          tab4: { contentBg: 'bg-green-50',
+             buttonBg: 'bg-green-50', 
+             contentText: 'text-green-800', 
+             titleText: 'text-green-400' } ,
         };
 
-        // Remove hover background classes to avoid any colored hover backgrounds
         const INACTIVE_HOVER_CLASSES = {
-          tab1: "",
-          tab2: "",
-          tab3: "",
-          tab4: "",
+          tab1: "hover:bg-sky-100",
+          tab2: "hover:bg-pink-100",
+          tab3: "hover:bg-amber-100",
+          tab4: "hover:bg-green-100",
         };
 
         const ALL_BG_CLASSES = ['bg-indigo-50', 'bg-pink-50', 'bg-amber-50', 'bg-green-50'];
@@ -58,12 +72,12 @@
           "bg-amber-200",
           "bg-green-200",
         ];
-        // Keep an array of colored text classes so we can remove them if present
         const ALL_TEXT_CLASSES = [
           "text-indigo-800",
           "text-pink-800",
           "text-amber-800",
           'text-green-800',
+          // "text-white",
         ];
         const ALL_INACTIVE_CLASSES = ["text-gray-700", "hover:bg-gray-100"];
 
@@ -177,17 +191,26 @@
 
           // 1. Clean up ALL tab buttons and set INACTIVE colored state
           tabButtons.forEach((btn) => {
-            // Ensure any previously applied colored classes are removed
+            const btnTabId = btn.getAttribute("data-tab");
+            const btnColorSet = COLORS[btnTabId];
+            const hoverClass = INACTIVE_HOVER_CLASSES[btnTabId];
+
+            // Remove all existing color, size, and active classes, including all hover classes we manage.
             btn.classList.remove(
               "tab-active",
               ...ALL_BUTTON_BG_CLASSES,
               ...ALL_BG_CLASSES,
               ...ALL_TEXT_CLASSES,
-              'text-gray-700'
+              "hover:bg-opacity-80", // Old hover class cleanup
+              ...Object.values(INACTIVE_HOVER_CLASSES) // New hover class cleanup
             );
 
-            // Set inactive button label color to neutral gray
-            btn.classList.add('text-gray-700');
+            // Apply the light background and EXPLICIT darker hover for INACTIVE state
+            btn.classList.add(
+              btnColorSet.contentBg,
+              btnColorSet.titleText,
+              hoverClass
+            );
           });
 
           // 2. Hide all tab content panes
@@ -195,38 +218,46 @@
             pane.classList.add("hidden");
           });
 
-          // 3. Clean up content wrapper colors and ensure it stays white
+          // 3. Clean up content wrapper colors
           tabContentWrapper.classList.remove(...ALL_BG_CLASSES);
-          tabContentWrapper.classList.add('bg-white');
 
           // 4. Apply ACTIVE Button Colors
           const activeBtn = document.querySelector(
             `.tab-btn[data-tab="${tabId}"]`
           );
           if (activeBtn) {
-            // Remove any previously applied text classes and neutral gray
-            activeBtn.classList.remove(...ALL_TEXT_CLASSES, 'text-gray-700');
-            // Keep active text color as 'spruce' only
-            activeBtn.classList.add("spruce", "tab-active");
+            // Remove all inactive styles, including the hover class
+            activeBtn.classList.remove(
+              colorSet.contentBg,
+              colorSet.titleText,
+              INACTIVE_HOVER_CLASSES[tabId]
+            );
+
+            // Apply the dark active style. No separate hover class is added,
+            // so the button color is constant whether active or hovered.
+            activeBtn.classList.add(
+              "spruce",
+              "tab-active",
+              colorSet.buttonBg
+            );
           }
 
-          // 5. Do not apply any colored background to the content wrapper (keep white)
-          tabContentWrapper.classList.add('bg-white');
+          // 5. Apply Content Wrapper Background Color (for the active tab)
+          tabContentWrapper.classList.add(colorSet.contentBg);
 
           // 6. Show active tab pane and set dynamic text colors
           document.getElementById(tabId).classList.remove("hidden");
 
           // Update text color for content inside the tab pane
           const contentDiv = document.getElementById("tabContent");
-          // remove any colored text classes and use neutral gray for content
           contentDiv.classList.remove(...ALL_TEXT_CLASSES);
-          contentDiv.classList.add('text-gray-700');
+          contentDiv.classList.add(colorSet.contentText);
 
           // Update the title color inside the tab pane
           const titleSpan = document.getElementById("nav-link-title");
           if (titleSpan) {
-            titleSpan.classList.remove(...ALL_TEXT_CLASSES, 'text-gray-700');
-            titleSpan.classList.add('spruce');
+            titleSpan.classList.remove(...ALL_TEXT_CLASSES);
+            titleSpan.classList.add(colorSet.titleText);
           }
         };
 
