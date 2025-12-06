@@ -89,7 +89,7 @@
     slides.forEach((slide, idx) => {
       slide.classList.toggle('active', idx === i);
       if (hasDots) {
-        dots[idx].classList.toggle('bg-pink-600', idx === i);
+        dots[idx].classList.toggle('bg-plum', idx === i);
         dots[idx].classList.toggle('bg-gray-400', idx !== i);
       }
     });

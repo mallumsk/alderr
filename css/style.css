@@ -117,4 +117,24 @@ p {font-family: poppins, sans-serif;}
   color: #707070 !important;
 } */
 
+.primary-btn {
+  background-color: #850a56;
+  color: #FFFFFF;
+  transition: background-color 150ms ease-in-out, color 150ms ease-in-out;
+}
+.primary-btn:hover {
+  background-color: #15404E;
+  color: #FFFFFF;
+}
+.secondary-btn {
+  background-color: #ffffff;
+  color: #850a56;
+ 
+  border: 1px solid #850a56;
+  transition: background-color 150ms ease-in-out, color 150ms ease-in-out;
+}
+.secondary-btn:hover {
+  background-color: #850a56;
+  color: #FFFFFF;
+}
  
