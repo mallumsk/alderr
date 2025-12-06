@@ -1,10 +1,20 @@
+ 
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alderr | Feature Vitae</title>
+
+    <script>
+      // Enable class-based dark mode for Tailwind (needed when using the CDN build)
+      window.tailwind = window.tailwind || {};
+      window.tailwind.config = {
+        darkMode: 'class',
+      };
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,22 +24,21 @@
     />
   </head>
 
-  <body class="bg-white text-gray-800 font-sans">
+  <body class="bg-white text-gray-800 font-sans dark:bg-gray-900 dark:text-gray-100">
     <!-- Header -->
      <section>
       <header
       id="header"
-      class="w-full bg-white shadow-lg  top-0 left-0 z-20"
+      class="w-full bg-white shadow-lg top-0 left-0 z-20 dark:bg-gray-800 dark:shadow-none dark:border-b dark:border-gray-700"
     >
       <div class="max-w-7xl mx-auto p-4">
         <!-- Navbar: MySite (Left) - Nav Links (Center) - Button (Right) -->
         <nav class="flex items-center justify-between flex-wrap">
           <!-- 1. Left: MySite Logo/Title -->
-          <!-- <div class="text-2xl font-extrabold text-indigo-700">MySite</div> -->
            <div class="flex lg:flex-1">
           <a href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">Alderr</span>
-            <span class="text-2xl font-extrabold text-blue-900">
+            <span class="text-2xl font-extrabold text-blue-900 dark:text-blue-300">
               <img src="images/subpage1/header_alderr_logo.svg" alt="Hero Image" class="object-cover"
             /></span> 
           </a>
@@ -42,7 +51,7 @@
             class="hidden sm:flex sm:items-center sm:space-x-4 mx-auto"
           >
             <button
-              class="nav-toggle-btn flex items-center space-x-1 text-gray-700 hover:text-[#850a56] transition duration-150"
+              class="nav-toggle-btn flex items-center space-x-1 text-gray-700 hover:text-[#850a56] transition duration-150 dark:text-gray-200"
               data-link="Home"
             >
               <span>Alignment Platforms</span
@@ -61,7 +70,7 @@
               </svg>
             </button>
             <button
-              class="nav-toggle-btn flex items-center space-x-1 text-gray-700 hover:text-[#850a56] transition duration-150"
+              class="nav-toggle-btn flex items-center space-x-1 text-gray-700 hover:text-[#850a56] transition duration-150 dark:text-gray-200"
               data-link="About"
             >
               <span>Why Alderr</span
@@ -80,7 +89,7 @@
               </svg>
             </button>
             <button
-              class="nav-toggle-btn flex items-center space-x-1 text-gray-700 hover:text-[#850a56] transition duration-150"
+              class="nav-toggle-btn flex items-center space-x-1 text-gray-700 hover:text-[#850a56] transition duration-150 dark:text-gray-200"
               data-link="Product"
             >
               <span>Who We Help</span
@@ -99,7 +108,7 @@
               </svg>
             </button>
             <button
-              class="nav-toggle-btn flex items-center space-x-1 text-gray-700 hover:text-[#850a56] transition duration-150"
+              class="nav-toggle-btn flex items-center space-x-1 text-gray-700 hover:text-[#850a56] transition duration-150 dark:text-gray-200"
               data-link="Service"
             >
               <span>Resources</span
@@ -118,7 +127,7 @@
               </svg>
             </button>
             <button
-              class="nav-toggle-btn flex items-center space-x-1 text-gray-700 hover:text-[#850a56] transition duration-150"
+              class="nav-toggle-btn flex items-center space-x-1 text-gray-700 hover:text-[#850a56] transition duration-150 dark:text-gray-200"
               data-link="Pricing"
             >
               <span>Company/Investors</span
@@ -141,13 +150,13 @@
           <!-- 3. Right: Mobile Button and Get Started Button -->
           <div class=" sm:hidden lg:flex lg:flex-1 lg:justify-end">
             <!-- Desktop CTA Button -->
-            <button class="primary-btn hidden sm:block  text-sm font-semibold px-4 py-2 rounded-full ">
+            <button class="primary-btn hidden sm:block text-sm font-semibold px-4 py-2 rounded-full dark:bg-indigo-600 dark:text-white">
                  Get Started
                 </button>
             <!-- Mobile Menu Toggle -->
             <button
               id="mobile-menu-button"
-              class="sm:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100 focus:outline-none"
+              class="sm:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100 focus:outline-none dark:text-gray-200 dark:hover:bg-gray-700"
             >
               <svg
                 class="h-6 w-6"
@@ -169,10 +178,10 @@
         <!-- Mobile Navigation Links (Unchanged) -->
         <div
           id="mobile-menu"
-          class="hidden sm:hidden w-full pt-2 border-t mt-2"
+          class="hidden sm:hidden w-full pt-2 border-t mt-2 dark:bg-gray-800 dark:border-gray-700"
         >
           <button
-            class="nav-toggle-btn block w-full text-left p-2 text-gray-700 hover:bg-gray-100 transition duration-150"
+            class="nav-toggle-btn block w-full text-left p-2 text-gray-700 hover:bg-gray-100 transition duration-150 dark:text-gray-200 dark:hover:bg-gray-700"
             data-link="Home"
           >
             <span class="flex items-center justify-between"
@@ -191,7 +200,7 @@
                 /></svg ></span>
           </button>
           <button
-            class="nav-toggle-btn block w-full text-left p-2 text-gray-700 hover:bg-gray-100 transition duration-150"
+            class="nav-toggle-btn block w-full text-left p-2 text-gray-700 hover:bg-gray-100 transition duration-150 dark:text-gray-200 dark:hover:bg-gray-700"
             data-link="About"
           >
             <span class="flex items-center justify-between"
@@ -210,7 +219,7 @@
                 /></svg ></span>
           </button>
           <button
-            class="nav-toggle-btn block w-full text-left p-2 text-gray-700 hover:bg-gray-100 transition duration-150"
+            class="nav-toggle-btn block w-full text-left p-2 text-gray-700 hover:bg-gray-100 transition duration-150 dark:text-gray-200 dark:hover:bg-gray-700"
             data-link="Product"
           >
             <span class="flex items-center justify-between"
@@ -229,7 +238,7 @@
                 /></svg ></span>
           </button>
           <button
-            class="nav-toggle-btn block w-full text-left p-2 text-gray-700 hover:bg-gray-100 transition duration-150"
+            class="nav-toggle-btn block w-full text-left p-2 text-gray-700 hover:bg-gray-100 transition duration-150 dark:text-gray-200 dark:hover:bg-gray-700"
             data-link="Service"
           >
             <span class="flex items-center justify-between"
@@ -248,7 +257,7 @@
                 /></svg ></span>
           </button>
           <button
-            class="nav-toggle-btn block w-full text-left p-2 text-gray-700 hover:bg-gray-100 transition duration-150"
+            class="nav-toggle-btn block w-full text-left p-2 text-gray-700 hover:bg-gray-100 transition duration-150 dark:text-gray-200 dark:hover:bg-gray-700"
             data-link="Pricing"
           >
             <span class="flex items-center justify-between"
@@ -270,20 +279,18 @@
       </div>
     </header>
 
-    <!-- Desktop Page Wrapper. We add 'relative' here so the absolute-positioned panel is contained within. -->
+    <!-- Desktop Page Wrapper. We add 'relative' class is removed and added/removed dynamically by JS -->
     <div id="desktop-page-wrapper" class="  "  >
-      <!-- The Panel HTML. 'relative' class is removed here and added/removed dynamically by JS -->
+      <!-- The Panel HTML. -->
       <div
         id="toggleDiv"
-        class="w-full border border-pearl shadow-xl overflow-hidden smooth-hide transition-all duration-500 ease-in-out bg-white sm:rounded-none sm:border-x-0"
+        class="w-full border border-pearl shadow-xl overflow-hidden smooth-hide transition-all duration-500 ease-in-out bg-white sm:rounded-none sm:border-x-0 dark:bg-gray-800 dark:border-gray-700"
         role="region"
       >
-        <!-- INNER WRAPPER: Constrains and centers the panel's content on desktop -->
         <div class="max-w-7xl mx-auto ">
-          <!-- Close Button: Positioned absolute relative to the full-width panel. -->
           <button
             id="closeButton"
-            class="absolute top-7 sm:top-2 right-4 p-1 text-gray-400 hover:text-gray-600 focus:outline-none rounded-full transition-colors z-30"
+            class="absolute top-7 sm:top-2 right-4 p-1 text-gray-400 hover:text-gray-600 focus:outline-none rounded-full transition-colors z-30 dark:text-gray-300 dark:hover:text-white"
             aria-label="Close"
           >
             <svg
@@ -303,8 +310,8 @@
 
           <div class="px-4">
             <!-- Custom Content Container for "About" -->
-            <div id="about-content" class="text-gray-600 hidden pt-4">
-              <h3 class="text-xl font-semibold spruce mb-4 ">
+            <div id="about-content" class="text-gray-600 hidden pt-4 dark:text-gray-200">
+              <h3 class="text-xl font-semibold spruce mb-4 dark:text-gray-100">
                 Why Alderr
               </h3>
               <p class="mb-4">
@@ -316,7 +323,7 @@
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-2 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-2 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150 dark:text-gray-200 dark:hover:bg-gray-700"
                   >
                     Our Mission
                   </a>
@@ -324,7 +331,7 @@
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-2 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-2 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150 dark:text-gray-200 dark:hover:bg-gray-700"
                   >
                     Our History
                   </a>
@@ -332,7 +339,7 @@
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-2 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150"
+                    class="block w-full p-2 text-gray-700 hover:bg-gray-100 rounded-md transition duration-150 dark:text-gray-200 dark:hover:bg-gray-700"
                   >
                     Team Members
                   </a>
@@ -340,16 +347,15 @@
               </ul>
             </div>
 
-            <!-- Tabbed Content Container for ALL other links -->
+            <!-- Tabbed Content Container -->
             <div id="tabbed-content" class="flex flex-col sm:flex-row ">
-              <!-- Tab Buttons Sidebar/Header (Horizontal on mobile, vertical on desktop) -->
               <div
                 id="tabButtons"
-                class="flex flex-row overflow-x-auto space-x-0 bg-white sm:flex-col sm:space-y-0 sm:space-x-0 sm:min-w-[295px] sm:border-b-0"
+                class="flex flex-row overflow-x-auto space-x-0 bg-white sm:flex-col sm:space-y-0 sm:space-x-0 sm:min-w-[295px] sm:border-b-0 dark:bg-gray-800"
               >
-                
+                 
 
-                        <button class="tab-btn lg:pr-4 lg:py-7 text-sm text-left whitespace-nowrap sm:w-full" data-tab="tab1"> 
+                        <button class="tab-btn lg:pr-4 lg:py-7 text-sm text-left whitespace-nowrap sm:w-full dark:text-gray-200" data-tab="tab1"> 
   <div class="text-sm flex items-center">
     <span>
       <img src="images/menu/willow.svg" alt="sdocs Icon" class="w-4 h-4" />
@@ -360,7 +366,7 @@
 </button>
                
 
-                       <button class="tab-btn lg:pr-4 lg:pb-7 text-sm  text-left whitespace-nowrap sm:w-full" data-tab="tab2"> 
+                       <button class="tab-btn lg:pr-4 lg:pb-7 text-sm  text-left whitespace-nowrap sm:w-full dark:text-gray-200" data-tab="tab2"> 
   <div class="text-sm flex items-center">
     <span>
       <img src="images/menu/abacus.svg" alt="sdocs Icon" class="w-4 h-4" />
@@ -370,7 +376,7 @@
   <div class="text-xs lg:pl-6 hidden lg:block onyx">Financial Clarity for Every Family - $10/Month</div>  
 </button>
                 
-                   <button class="tab-btn lg:pr-4 lg:pb-7 text-sm  text-left whitespace-nowrap sm:w-full" data-tab="tab3"> 
+                   <button class="tab-btn lg:pr-4 lg:pb-7 text-sm  text-left whitespace-nowrap sm:w-full dark:text-gray-200" data-tab="tab3"> 
   <div class="text-sm flex items-center">
     <span>
       <img src="images/menu/sdocs.svg" alt="sdocs Icon" class="w-4 h-4" />
@@ -381,7 +387,7 @@
 </button>
 
 
-                <button class="tab-btn lg:pr-4 lg:pb-7 text-sm   text-left whitespace-nowrap sm:w-full" data-tab="tab4"> 
+                <button class="tab-btn lg:pr-4 lg:pb-7 text-sm   text-left whitespace-nowrap sm:w-full dark:text-gray-200" data-tab="tab4"> 
   <div class="text-sm flex items-center">
     <span>
       <img src="images/menu/willow.svg" alt="Willow Icon" class="w-4 h-4 object-cover" />
@@ -392,12 +398,11 @@
 </button>
               </div>
 
-              <!-- Tab Content Wrapper (Max height and scrollable on both mobile and desktop) --> 
               <div
                 id="tabContentWrapper"
                 class="flex-grow mt-4 sm:mt-0  transition-colors duration-300 max-h-[300px] sm:max-h-[400px] overflow-y-auto"
               >
-                <div id="tabContent" class="border-l border-dashed border-gray-200 w-full pb-4">
+                <div id="tabContent" class="border-l border-dashed border-gray-200 w-full pb-4 dark:border-gray-700">
                   <div id="tab1" class="tab-pane">
                     <h3 class="text-xl font-semibold mb-4 hidden">
                       Selected Link: <span id="nav-link-title" class="hidden">
@@ -405,11 +410,9 @@
 Alignment Platforms</span> 
                     </h3>
 
-                    <!-- 3-Column Layout for Home/Tab1 -->
                     <div class="grid grid-cols-1 md:grid-cols-4 gap-1 ">
-                      <!-- Column 1 -->
                       <div class="pl-2 pt-4 ">
-                        <h4 class="text-xs uppercase text-gray-500 mb-4">
+                        <h4 class="text-xs uppercase text-gray-500 mb-4 dark:text-gray-300">
                           Features
                         </h4>
                         
@@ -417,7 +420,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                     Transactional Billing, Rebuilt
                   </a>
@@ -425,7 +428,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                     AR Optimization Reimagined
                   </a>
@@ -433,7 +436,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                     Proof in Numbers
                   </a>
@@ -441,7 +444,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                    EMR Your Way
                   </a>
@@ -449,7 +452,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                    Functional Plug-Ins
                   </a>
@@ -457,7 +460,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                     Patient Alignment
                   </a>
@@ -465,7 +468,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                     The Normal Stuff
                   </a>
@@ -473,7 +476,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                    Free Billing Is Possible
                   </a>
@@ -482,16 +485,15 @@ Alignment Platforms</span>
               </ul>
                         
                       </div>
-                      <!-- Column 2 -->
-                      <div class="border-l border-dashed border-gray-200 pl-2 pt-4">
-                        <h4 class="text-xs uppercase text-gray-500 mb-4">
+                      <div class="border-l border-dashed border-gray-200 pl-2 pt-4 dark:border-gray-700">
+                        <h4 class="text-xs uppercase text-gray-500 mb-4 dark:text-gray-300">
                           For
                         </h4>
                         <ul class="space-y-1 text-sm">
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                     Solo Providers
                   </a>
@@ -499,7 +501,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                     Group Practices
                   </a>
@@ -507,7 +509,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                     New Clinics
                   </a>
@@ -515,7 +517,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                   Billing Companies
                   </a>
@@ -523,16 +525,15 @@ Alignment Platforms</span>
              
               </ul>
                       </div>
-                      <!-- Column 3 -->
-                      <div class="border-l border-dashed border-gray-200 pl-2 pt-4">
-                        <h4 class="text-xs uppercase text-gray-500 mb-4">
+                      <div class="border-l border-dashed border-gray-200 pl-2 pt-4 dark:border-gray-700">
+                        <h4 class="text-xs uppercase text-gray-500 mb-4 dark:text-gray-300">
                           Pricing
                         </h4>
                          <ul class="space-y-1 text-sm">
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                     Transactional First/Then Free
                   </a>
@@ -540,7 +541,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                     Savings Calculator
                   </a>
@@ -553,16 +554,16 @@ Alignment Platforms</span>
 
 
 <div class=" ">
-                      <div class="border-l border-dashed border-gray-200 bg-pearl px-2 pt-4">
-          <h4 class="text-xs uppercase text-gray-500 mb-4  ">
+                      <div class="border-l border-dashed border-gray-200 bg-pearl px-2 pt-4 dark:bg-gray-700 dark:border-gray-700">
+          <h4 class="text-xs uppercase text-gray-500 mb-4 dark:text-gray-300  ">
             Featured Article
           </h4>
           <div class="flex flex-col space-y-3">
             <img id="article-img" src="https://images.unsplash.com/photo-1588702547923-7093a6c3ba33?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Featured" class="rounded-lg w-full h-32 object-cover">
             <div class=" pb-2">
-              <h5 id="article-title" class="font-semibold text-gray-800">sDocs: The Future of Document Management</h5>
-              <p id="article-desc" class="text-sm text-gray-500">Simplify documentation and compliance with sDocs AI.</p>
-              <a href="#" class="spruce text-sm font-semibold inline-flex items-center space-x-1">
+              <h5 id="article-title" class="font-semibold text-gray-800 dark:text-gray-100">sDocs: The Future of Document Management</h5>
+              <p id="article-desc" class="text-sm text-gray-500 dark:text-gray-300">Simplify documentation and compliance with sDocs AI.</p>
+              <a href="#" class="spruce text-sm font-semibold inline-flex items-center space-x-1 dark:text-gray-200">
                 <span>Read more</span> <span>→</span>
               </a>
             </div>
@@ -570,25 +571,12 @@ Alignment Platforms</span>
         </div></div>
                     </div>
 
-                    <!-- Added content to trigger desktop scrollbar when content overflows the 400px limit -->
-                    <!-- <div
-                      class="mt-6 p-4 bg-indigo-100/50 rounded-lg col-span-1 md:col-span-3"
-                    >
-                      <h4 class="font-bold text-lg mb-2 text-indigo-800">
-                        Further Details on System Architecture
-                      </h4>
-                  
-                   
-                    
-                    </div> -->
-                    <!-- End added content -->
                   </div>
 
                   <div id="tab2" class="tab-pane hidden">
                      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 ">
-                      <!-- Column 1 -->
                       <div class="pl-2 pt-4">
-                        <h4 class="text-xs uppercase text-gray-500 mb-4">
+                        <h4 class="text-xs uppercase text-gray-500 mb-4 dark:text-gray-300">
                           For You
                         </h4>
                         
@@ -596,7 +584,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                     Patients, Families & Caregivers
                   </a>
@@ -604,7 +592,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                     Step-by-Step Walkthrough
                   </a>
@@ -612,7 +600,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                     Real Examples
                   </a>
@@ -620,7 +608,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                    Data Safety 
                   </a>
@@ -629,16 +617,15 @@ Alignment Platforms</span>
               </ul>
                         
                       </div>
-                      <!-- Column 2 -->
-                      <div class="border-l border-dashed border-gray-200 pl-2 pt-4">
-                        <h4 class="text-xs uppercase text-gray-500 mb-4">
+                      <div class="border-l border-dashed border-gray-200 pl-2 pt-4 dark:border-gray-700">
+                        <h4 class="text-xs uppercase text-gray-500 mb-4 dark:text-gray-300">
                           How Employers Can Help
                         </h4>
                         <ul class="space-y-1 text-sm">
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                     HR Benefit Integration
                   </a>
@@ -646,25 +633,23 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                    Reduce Premium Creep
                   </a>
                 </li>
             
-             
               </ul>
                       </div>
-                      <!-- Column 3 -->
-                      <div class="border-l border-dashed border-gray-200 pl-2 pt-4">
-                        <h4 class="text-xs uppercase text-gray-500 mb-4">
+                      <div class="border-l border-dashed border-gray-200 pl-2 pt-4 dark:border-gray-700">
+                        <h4 class="text-xs uppercase text-gray-500 mb-4 dark:text-gray-300">
                           Why It Matters
                         </h4>
                           <ul class="space-y-1 text-sm">
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                     What’s a Credit Balance?
                   </a>
@@ -672,7 +657,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                     Why Wait to Pay a Bill?
                   </a>
@@ -680,7 +665,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                     Denials Aren’t Always Denials.
                   </a>
@@ -688,7 +673,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                    Statements Aren’t Always Statements.
                   </a>
@@ -696,7 +681,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                    Premiums keep rising 
                   </a>
@@ -704,7 +689,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                     Medical Debt Is the #1 Cause of Bankruptcy.
                   </a>
@@ -712,7 +697,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                     Learn More (blog w/ product tags)
                   </a>
@@ -723,16 +708,16 @@ Alignment Platforms</span>
 
                                <!-- column 4-->
 <div class=" ">
-                    <div class="border-l border-dashed border-gray-200 py-2 pt-4 bg-pearl  px-2">
-          <h4 class="text-xs uppercase text-gray-500 mb-4 ">
+                    <div class="border-l border-dashed border-gray-200 py-2 pt-4 bg-pearl  px-2 dark:bg-gray-700 dark:border-gray-700">
+          <h4 class="text-xs uppercase text-gray-500 mb-4 dark:text-gray-300 ">
             Featured Article
           </h4>
           <div class="flex flex-col space-y-3">
             <img id="article-img" src="images/subpage1/slider_doctor.PNG" alt="Featured" class="rounded-lg w-full h-32 object-cover">
             <div class=" ">
-              <h5 id="article-title" class="font-semibold text-gray-800">Abacus: Smarter Workflow Automation</h5>
-              <p id="article-desc" class="text-sm text-gray-500">Explore how Abacus helps teams accelerate billing processes.</p>
-              <a href="#" class="spruce text-sm font-semibold inline-flex items-center space-x-1">
+              <h5 id="article-title" class="font-semibold text-gray-800 dark:text-gray-100">Abacus: Smarter Workflow Automation</h5>
+              <p id="article-desc" class="text-sm text-gray-500 dark:text-gray-300">Explore how Abacus helps teams accelerate billing processes.</p>
+              <a href="#" class="spruce text-sm font-semibold inline-flex items-center space-x-1 dark:text-gray-200">
                 <span>Read more</span> <span>→</span>
               </a>
             </div>
@@ -748,9 +733,8 @@ Alignment Platforms</span>
                    
 
                     <div class="grid grid-cols-1 md:grid-cols-4 gap-6 ">
-                      <!-- Column 1 -->
                       <div class=" pl-2 pt-4 ">
-                        <h4 class="text-xs uppercase text-gray-500 mb-4">
+                        <h4 class="text-xs uppercase text-gray-500 mb-4 dark:text-gray-300">
                        Management Centralized 
                         </h4>
                         
@@ -758,7 +742,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                     Command & Workflow Engine (Full RCM)
                   </a>
@@ -766,7 +750,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                     Self-Auditing QA 
                   </a>
@@ -774,7 +758,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                    Communication Layer
                   </a>
@@ -782,7 +766,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                    Proof in Numbers
                   </a>
@@ -790,7 +774,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                   Prioritization Logic
                   </a>
@@ -798,7 +782,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                     Multi-Org Architecture
                   </a>
@@ -806,7 +790,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                     Data Inflows
                   </a>
@@ -814,7 +798,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                    The Normal Stuff
                   </a>
@@ -823,16 +807,15 @@ Alignment Platforms</span>
               </ul>
                         
                       </div>
-                      <!-- Column 2 -->
-                      <div class="border-l border-dashed border-gray-200 pl-2 pt-4">
-                        <h4 class="text-xs uppercase text-gray-500 mb-4">
+                      <div class="border-l border-dashed border-gray-200 pl-2 pt-4 dark:border-gray-700">
+                        <h4 class="text-xs uppercase text-gray-500 mb-4 dark:text-gray-300">
                           Partners
                         </h4>
                         <ul class="space-y-1 text-sm">
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                     Billing Firms
                   </a>
@@ -840,7 +823,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                     Global BPOs
                   </a>
@@ -848,25 +831,23 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                    CBOs & Med to Large Practices
                   </a>
                 </li>
                  
-             
               </ul>
                       </div>
-                      <!-- Column 3 -->
-                      <div class="border-l border-dashed border-gray-200 pl-2 pt-4">
-                        <h4 class="text-xs uppercase text-gray-500 mb-4">
+                      <div class="border-l border-dashed border-gray-200 pl-2 pt-4 dark:border-gray-700">
+                        <h4 class="text-xs uppercase text-gray-500 mb-4 dark:text-gray-300">
                           Resources
                         </h4>
                          <ul class="space-y-1 text-sm">
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                     Blog
                   </a>
@@ -874,7 +855,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                     Case Studies
                   </a>
@@ -882,46 +863,36 @@ Alignment Platforms</span>
                     <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                     Security & Compliance
                   </a>
                 </li>
                 
-             
               </ul>
                       </div>
 
-                      <!-- Column 4 -->
                       <div class="">
                        
-                        <div class="border-l border-dashed border-gray-200 px-2 pt-4 bg-pearl ">
-          <h4 class="text-xs uppercase text-gray-500 mb-4  ">
+                        <div class="border-l border-dashed border-gray-200 px-2 pt-4 bg-pearl dark:bg-gray-700 dark:border-gray-700">
+          <h4 class="text-xs uppercase text-gray-500 mb-4  dark:text-gray-300">
             Featured Article
           </h4>
           <div class="flex flex-col space-y-3">
             <img id="article-img" src="images/subpage1/slider_doctor2.PNG" alt="Featured" class="rounded-lg w-full h-32 object-cover">
             <div class=" ">
-              <h5 id="article-title" class="font-semibold text-gray-800">Willow in Action: Simplifying Healthcare</h5>
-              <p id="article-desc" class="text-sm text-gray-500">Discover how AI transforms everyday healthcare operations.</p>
-              <a href="#" class="spruce text-sm font-semibold inline-flex items-center space-x-1">
+              <h5 id="article-title" class="font-semibold text-gray-800 dark:text-gray-100">Willow in Action: Simplifying Healthcare</h5>
+              <p id="article-desc" class="text-sm text-gray-500 dark:text-gray-300">Discover how AI transforms everyday healthcare operations.</p>
+              <a href="#" class="spruce text-sm font-semibold inline-flex items-center space-x-1 dark:text-gray-200">
                 <span>Read more</span> <span>→</span>
               </a>
             </div>
           </div>
         </div>
 
-
-
                       </div>
 
-
-
                     </div>
-
-
-
-
 
                   </div>
 
@@ -930,9 +901,8 @@ Alignment Platforms</span>
                    
 
                     <div class="grid grid-cols-1 md:grid-cols-4 gap-6 ">
-                      <!-- Column 1 -->
                       <div class="  pl-2 pt-4">
-                        <h4 class="text-xs uppercase text-gray-500 mb-4">
+                        <h4 class="text-xs uppercase text-gray-500 mb-4 dark:text-gray-300">
                        Management Centralized 
                         </h4>
                         
@@ -940,7 +910,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                     Command & Workflow Engine (Full RCM)
                   </a>
@@ -948,7 +918,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                     Self-Auditing QA 
                   </a>
@@ -956,7 +926,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                    Communication Layer
                   </a>
@@ -964,7 +934,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                    Proof in Numbers
                   </a>
@@ -972,7 +942,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                   Prioritization Logic
                   </a>
@@ -980,7 +950,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                     Multi-Org Architecture
                   </a>
@@ -988,7 +958,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                     Data Inflows
                   </a>
@@ -996,7 +966,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                    The Normal Stuff
                   </a>
@@ -1005,16 +975,15 @@ Alignment Platforms</span>
               </ul>
                         
                       </div>
-                      <!-- Column 2 -->
-                      <div class="border-l border-dashed border-gray-200 pl-2 pt-4 ">
-                        <h4 class="text-xs uppercase text-gray-500 mb-4">
+                      <div class="border-l border-dashed border-gray-200 pl-2 pt-4 dark:border-gray-700 ">
+                        <h4 class="text-xs uppercase text-gray-500 mb-4 dark:text-gray-300">
                           Partners
                         </h4>
                         <ul class="space-y-1 text-sm">
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                     Billing Firms
                   </a>
@@ -1022,7 +991,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                     Global BPOs
                   </a>
@@ -1030,25 +999,23 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                    CBOs & Med to Large Practices
                   </a>
                 </li>
                  
-             
               </ul>
                       </div>
-                      <!-- Column 3 -->
-                      <div class="border-l border-dashed border-gray-200 pl-2 pt-4 ">
-                        <h4 class="text-xs uppercase text-gray-500 mb-4">
+                      <div class="border-l border-dashed border-gray-200 pl-2 pt-4 dark:border-gray-700 ">
+                        <h4 class="text-xs uppercase text-gray-500 mb-4 dark:text-gray-300">
                           Resources
                         </h4>
                          <ul class="space-y-1 text-sm">
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                     Blog
                   </a>
@@ -1056,7 +1023,7 @@ Alignment Platforms</span>
                 <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                     Case Studies
                   </a>
@@ -1064,41 +1031,33 @@ Alignment Platforms</span>
                     <li>
                   <a
                     href="#"
-                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150"
+                    class="block w-full p-1 spruce hover:text-[#850a56] rounded-md transition duration-150 dark:text-gray-200"
                   >
                     Security & Compliance
                   </a>
                 </li>
                 
-             
               </ul>
                       </div>
 
-                      <!-- Column 4 -->
                       <div class="">
-                      <div class="border-l border-dashed border-gray-200 pt-4 bg-pearl px-2">
-          <h4 class="text-xs uppercase text-gray-500 mb-4 ">
+                      <div class="border-l border-dashed border-gray-200 pt-4 bg-pearl px-2 dark:bg-gray-700 dark:border-gray-700">
+          <h4 class="text-xs uppercase text-gray-500 mb-4 dark:text-gray-300 ">
             Featured Article
           </h4>
           <div class="flex flex-col space-y-3">
             <img id="article-img" src="https://images.unsplash.com/photo-1588702547923-7093a6c3ba33?auto=format&amp;fit=crop&amp;w=400&amp;q=80" alt="Featured" class="rounded-lg w-full h-32 object-cover">
             <div class=" ">
-              <h5 id="article-title" class="font-semibold text-gray-800">sDocs: The Future of Document Management</h5>
-              <p id="article-desc" class="text-sm text-gray-500">Simplify documentation and compliance with sDocs AI.</p>
-              <a href="#" class="spruce text-sm font-semibold inline-flex items-center space-x-1">
+              <h5 id="article-title" class="font-semibold text-gray-800 dark:text-gray-100">sDocs: The Future of Document Management</h5>
+              <p id="article-desc" class="text-sm text-gray-500 dark:text-gray-300">Simplify documentation and compliance with sDocs AI.</p>
+              <a href="#" class="spruce text-sm font-semibold inline-flex items-center space-x-1 dark:text-gray-200">
                 <span>Read more</span> <span>→</span>
               </a>
             </div>
           </div>
         </div></div>
 
-
-
                     </div>
-
-
-
-
 
                   </div>
 
@@ -1119,7 +1078,7 @@ Alignment Platforms</span>
 
     <!-- Hero Section -->
 
-    <section class="bg-warm-grey py-24">
+    <section class="bg-warm-grey py-24 dark:bg-gray-900">
        <div class="static hidden lg:block">
             
            
@@ -1127,25 +1086,22 @@ Alignment Platforms</span>
       <div class="max-w-6xl mx-auto px-6 text-center">
         <div class="grid md:grid-cols-2 gap-10 items-center">
           <div>
-            <p class="text-sm uppercase tracking-wide onyx mb-2 text-left">
+            <p class="text-sm uppercase tracking-wide onyx mb-2 text-left dark:text-gray-300">
             Overline
           </p>
-            <h2 class="text-4xl font-bold mb-4 text-left">
+            <h2 class="text-4xl font-bold mb-4 text-left dark:text-gray-100">
               SmartBug | Header lorem ipsum
             </h2>
-            <p class="text-gray-600 text-left">
+            <p class="text-gray-600 text-left dark:text-gray-300">
              Malesuada amet neque diam arcu. Mauris pharetra eu ornare lorem porta nibh condimentum pellentesque.
             </p>
             <div class="mt-6 text-left">
-             <a href="#"><button class="primary-btn text-sm font-semibold px-4 py-2 rounded-full ">
+             <a href="#"><button class="primary-btn text-sm font-semibold px-4 py-2 rounded-full dark:bg-indigo-600 dark:text-white">
                   Primary CTA
                 </button></a>
-              <a href="#"><button class="secondary-btn text-sm font-semibold px-4 py-2 rounded-full ml-2 ">
+              <a href="#"><button class="secondary-btn text-sm font-semibold px-4 py-2 rounded-full ml-2 dark:bg-gray-700 dark:text-white">
             Secondary CTA
           </button></a>
-
-          
-              
               </div>
           </div>
           <img
@@ -1159,9 +1115,8 @@ Alignment Platforms</span>
       </div>
     </section>
 
- 
     <!-- Section 2 -->
-    <section class="py-32 bg-white">
+    <section class="py-32 bg-white dark:bg-gray-900">
           <div class="static hidden lg:block">
             
                
@@ -1170,7 +1125,7 @@ Alignment Platforms</span>
 
 
         <div class=" text-center">
-        <p class="text-xl mb-2">These great team use our softeware</p>
+        <p class="text-xl mb-2 dark:text-gray-200">These great team use our softeware</p>
 
         <div class="grid md:grid-cols-5 py-6 gap-10 items-center">
           <div class=" mx-auto">
@@ -1201,16 +1156,16 @@ Alignment Platforms</span>
             alt="Brand Image 3"
             class="md:hidden rounded-xl object-cover mb-6"
           />
-            <h2 class="text-4xl font-bold mb-4">
+            <h2 class="text-4xl font-bold mb-4 dark:text-gray-100">
               Feature vitae dignissim sit aenean sem nulla eget
             </h2>
-            <p class="text-gray-600">
+            <p class="text-gray-600 dark:text-gray-300">
               Description mattis tincidunt consectetur massa. Sit elementum at lacus nisl tincidunt semper amet. Egestas nisi ut felis amet nunc. Tincidunt cras consequat arcu gravida justo non. Et euismod tincidunt lorem odio bibendum diam nunc pellentesque massa. Massa et ullamcorper nulla.
             </p>
             <div class="mt-4 flex"> 
-             <a href="#"></a> <button class="secondary-btn text-sm font-semibold px-4 py-2 rounded-full ">
+             <a href="#"></a> <button class="secondary-btn text-sm font-semibold px-4 py-2 rounded-full dark:bg-gray-700 dark:text-white">
             Button
-          </button></a> <a href="#" class="spruce underline ml-4 font-semibold pt-2 hover:no-underline">Button</a>
+          </button></a> <a href="#" class="spruce underline ml-4 font-semibold pt-2 hover:no-underline dark:text-gray-200">Button</a>
               </div>
           </div>
           <img
@@ -1230,16 +1185,16 @@ Alignment Platforms</span>
             class="rounded-xl object-cover"
           />
         <div>
-            <h2 class="text-4xl font-bold mb-4">
+            <h2 class="text-4xl font-bold mb-4 dark:text-gray-100">
               Feature vitae dignissim sit aenean sem nulla eget
             </h2>
-            <p class="text-gray-600">
+            <p class="text-gray-600 dark:text-gray-300">
               Description mattis tincidunt consectetur massa. Sit elementum at lacus nisl tincidunt semper amet. Egestas nisi ut felis amet nunc. Tincidunt cras consequat arcu gravida justo non. Et euismod tincidunt lorem odio bibendum diam nunc pellentesque massa. Massa et ullamcorper nulla.
             </p>
             <div class="mt-4 flex"> 
-             <a href="#"></a> <button class="secondary-btn text-sm font-semibold px-4 py-2 rounded-full ">
+             <a href="#"></a> <button class="secondary-btn text-sm font-semibold px-4 py-2 rounded-full dark:bg-gray-700 dark:text-white">
             Button
-          </button></a> <a href="#" class="spruce underline ml-4 font-semibold pt-2 hover:no-underline">Button</a>
+          </button></a> <a href="#" class="spruce underline ml-4 font-semibold pt-2 hover:no-underline dark:text-gray-200">Button</a>
               </div>
           </div>
         </div>
@@ -1252,16 +1207,16 @@ Alignment Platforms</span>
             alt="Brand Image 3"
             class="md:hidden rounded-xl object-cover mb-6"
           />
-            <h2 class="text-4xl font-bold mb-4">
+            <h2 class="text-4xl font-bold mb-4 dark:text-gray-100">
               Feature vitae dignissim sit aenean sem nulla eget
             </h2>
-            <p class="text-gray-600">
+            <p class="text-gray-600 dark:text-gray-300">
               Description mattis tincidunt consectetur massa. Sit elementum at lacus nisl tincidunt semper amet. Egestas nisi ut felis amet nunc. Tincidunt cras consequat arcu gravida justo non. Et euismod tincidunt lorem odio bibendum diam nunc pellentesque massa. Massa et ullamcorper nulla.
             </p>
             <div class="mt-4 flex"> 
-             <a href="#"></a> <button class="secondary-btn text-sm font-semibold px-4 py-2 rounded-full ">
+             <a href="#"></a> <button class="secondary-btn text-sm font-semibold px-4 py-2 rounded-full dark:bg-gray-700 dark:text-white">
             Button
-          </button></a> <a href="#" class="spruce underline ml-4 font-semibold pt-2 hover:no-underline">Button</a>
+          </button></a> <a href="#" class="spruce underline ml-4 font-semibold pt-2 hover:no-underline dark:text-gray-200">Button</a>
               </div>
           </div>
           <img
@@ -1271,55 +1226,36 @@ Alignment Platforms</span>
           />
         </div>
       </div>
-      <!-- <div class="static hidden lg:block">
-        <div class="absolute right-0  " style="margin-top: 40px;">
-          <img src="images/subpage1/dot_pattern.png" />
-        </div>
-      </div> -->
     </section>
 
     <!-- Section 3 -->
-     <section class="bg-spruce py-6">
+     <section class="bg-spruce py-6 dark:bg-slate-800">
       <div class="max-w-6xl mx-auto px-6 text-center ">
-       <h3 class="text-white font-medium">Viverra lorem est mauris ultrices > </h3>
+       <h3 class="text-white font-medium dark:text-gray-100">Viverra lorem est mauris ultrices > </h3>
       </div>
-
-     
-
      </section>
-
 
     <!-- Section 4 -->
     <section class="py-16 md:py-16 ">
-
-       <div class="static lg:block">
-            
-            
-          </div>
+       <div class="static lg:block"></div>
       <div class="bg-static  lg:block">
         <div class="absolute right-0 mt-4"></div>
         <div class="max-w-6xl mx-auto px-6 text-center">
-         
           <div class="max-w-xl mx-auto">
-          
-          <h2 class="text-4xl font-bold mb-2">
+          <h2 class="text-4xl font-bold mb-2 dark:text-gray-100">
             Feature vitae dignissim sit aenean sem nulla eget
           </h2>
-          <p class="text-xl text-[#577993] mb-16">
+          <p class="text-xl text-[#577993] mb-16 dark:text-sky-300">
             Feature vitae dignissim sit aenean sem nulla eget
           </p>
           </div>
-
-
            </div>
- 
       <div class="max-w-6xl mx-auto px-6 text-center">
           <div
             class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center"
           >
-            <!-- Outcome Card -->
             <div
-              class="bg-white border border-gray-200 py-16 px-6 w-full shadow-sm rounded-xl"
+              class="bg-white border border-gray-200 py-16 px-6 w-full shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700"
             >
               <div class="text-3xl mb-4 justify-items-center">
                 <img
@@ -1328,14 +1264,14 @@ Alignment Platforms</span>
                   class=" object-cover "
                 />
               </div>
-              <h3 class="font-semibold text-lg mb-2">Feature vitae dignissim sit</h3>
-              <p class="text-gray-600 text-sm">
+              <h3 class="font-semibold text-lg mb-2 dark:text-gray-100">Feature vitae dignissim sit</h3>
+              <p class="text-gray-600 text-sm dark:text-gray-300">
                 Vitae ante cras cum tempus id massa. Tortor nunc eget amet consequat. Vitae auctor sapien ut aliquet imperdiet urna.
               </p>
             </div>
 
             <div
-              class="bg-white border border-gray-200 py-16 px-6 w-full   shadow-sm rounded-xl"
+              class="bg-white border border-gray-200 py-16 px-6 w-full   shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700"
             >
               <div class="text-3xl mb-4 justify-items-center">
                 <img
@@ -1344,14 +1280,14 @@ Alignment Platforms</span>
                   class="  object-cover"
                 />
               </div>
-              <h3 class="font-semibold text-lg mb-2">Feature vitae dignissim sit</h3>
-              <p class="text-gray-600 text-sm">
+              <h3 class="font-semibold text-lg mb-2 dark:text-gray-100">Feature vitae dignissim sit</h3>
+              <p class="text-gray-600 text-sm dark:text-gray-300">
                 Vitae ante cras cum tempus id massa. Tortor nunc eget amet consequat. Vitae auctor sapien ut aliquet imperdiet urna.
               </p>
             </div>
 
             <div
-              class="bg-white border border-gray-200 py-16 px-6 w-full   shadow-sm rounded-xl"
+              class="bg-white border border-gray-200 py-16 px-6 w-full   shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700"
             >
               <div class="text-3xl mb-4 justify-items-center">
                 <img
@@ -1360,13 +1296,13 @@ Alignment Platforms</span>
                   class="  object-cover"
                 />
               </div>
-              <h3 class="font-semibold text-lg mb-2">Feature vitae dignissim sit</h3>
-              <p class="text-gray-600 text-sm">
+              <h3 class="font-semibold text-lg mb-2 dark:text-gray-100">Feature vitae dignissim sit</h3>
+              <p class="text-gray-600 text-sm dark:text-gray-300">
                 Vitae ante cras cum tempus id massa. Tortor nunc eget amet consequat. Vitae auctor sapien ut aliquet imperdiet urna.
               </p>
             </div>
                 <div
-              class="bg-white border border-gray-200 py-16 px-6 w-full   shadow-sm rounded-xl"
+              class="bg-white border border-gray-200 py-16 px-6 w-full   shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700"
             >
               <div class="text-3xl mb-4 justify-items-center">
                 <img
@@ -1375,13 +1311,13 @@ Alignment Platforms</span>
                   class="  object-cover"
                 />
               </div>
-              <h3 class="font-semibold text-lg mb-2">Feature vitae dignissim sit</h3>
-              <p class="text-gray-600 text-sm">
+              <h3 class="font-semibold text-lg mb-2 dark:text-gray-100">Feature vitae dignissim sit</h3>
+              <p class="text-gray-600 text-sm dark:text-gray-300">
                 Vitae ante cras cum tempus id massa. Tortor nunc eget amet consequat. Vitae auctor sapien ut aliquet imperdiet urna.
               </p>
             </div>
                 <div
-              class="bg-white border border-gray-200 py-16 px-6 w-full   shadow-sm rounded-xl"
+              class="bg-white border border-gray-200 py-16 px-6 w-full   shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700"
             >
               <div class="text-3xl mb-4 justify-items-center">
                 <img
@@ -1390,13 +1326,13 @@ Alignment Platforms</span>
                   class="  object-cover"
                 />
               </div>
-              <h3 class="font-semibold text-lg mb-2">Feature vitae dignissim sit</h3>
-              <p class="text-gray-600 text-sm">
+              <h3 class="font-semibold text-lg mb-2 dark:text-gray-100">Feature vitae dignissim sit</h3>
+              <p class="text-gray-600 text-sm dark:text-gray-300">
                 Vitae ante cras cum tempus id massa. Tortor nunc eget amet consequat. Vitae auctor sapien ut aliquet imperdiet urna.
               </p>
             </div>
                 <div
-              class="bg-white border border-gray-200 py-16 px-6 w-full   shadow-sm rounded-xl"
+              class="bg-white border border-gray-200 py-16 px-6 w-full   shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700"
             >
               <div class="text-3xl mb-4 justify-items-center">
                 <img
@@ -1405,8 +1341,8 @@ Alignment Platforms</span>
                   class="  object-cover"
                 />
               </div>
-              <h3 class="font-semibold text-lg mb-2">Feature vitae dignissim sit</h3>
-              <p class="text-gray-600 text-sm">
+              <h3 class="font-semibold text-lg mb-2 dark:text-gray-100">Feature vitae dignissim sit</h3>
+              <p class="text-gray-600 text-sm dark:text-gray-300">
                 Vitae ante cras cum tempus id massa. Tortor nunc eget amet consequat. Vitae auctor sapien ut aliquet imperdiet urna.
               </p>
             </div>
@@ -1421,16 +1357,16 @@ Alignment Platforms</span>
      <div class="grid md:grid-cols-2 gap-10 items-center md:flex-row-reverse  ">
           <img src="images/subpage1/doctor_with_tab.png" alt="Brand Image 2" class="rounded-xl object-cover">
         <div>
-            <h2 class="text-4xl font-bold mb-4 text-left">
+            <h2 class="text-4xl font-bold mb-4 text-left dark:text-gray-100">
               Feature vitae dignissim sit aenean sem nulla eget
             </h2>
-            <p class="text-gray-600 text-left">
+            <p class="text-gray-600 text-left dark:text-gray-300">
               Description mattis tincidunt consectetur massa. Sit elementum at lacus nisl tincidunt semper amet. Egestas nisi ut felis amet nunc. Tincidunt cras consequat arcu gravida justo non. Et euismod tincidunt lorem odio bibendum diam nunc pellentesque massa. Massa et ullamcorper nulla.
             </p>
             <div class="mt-4 flex"> 
-             <a href="#"></a> <button class="secondary-btn text-sm font-semibold px-4 py-2 rounded-full ">
+             <a href="#"></a> <button class="secondary-btn text-sm font-semibold px-4 py-2 rounded-full dark:bg-gray-700 dark:text-white">
             Button
-          </button> <a href="#" class="spruce underline ml-4 font-semibold pt-2 hover:no-underline">Button</a>
+          </button> <a href="#" class="spruce underline ml-4 font-semibold pt-2 hover:no-underline dark:text-gray-200">Button</a>
               </div>
           </div>
         </div>
@@ -1439,10 +1375,8 @@ Alignment Platforms</span>
 
         <!--slider start-->
          <section class="py-16 md:py-16 ">
-       
-
         <div class="max-w-6xl mx-auto px-6 text-center ">
-        <div id="testimonial-slider" class="relative rounded-2xl py-8 px-2 lg:py-12 lg:px-24 overflow-hidden bg-white">
+        <div id="testimonial-slider" class="relative rounded-2xl py-8 px-2 lg:py-12 lg:px-24 overflow-hidden bg-white dark:bg-gray-800">
      
         <div class="slides relative">
                <div class="slide flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
@@ -1450,14 +1384,14 @@ Alignment Platforms</span>
                 <img src="images/test_1.png" alt="Person 1" class="w-32 h-32 rounded-full object-cover">
               </div>
               <div>
-                <h4 class="text-xl font-semibold mb-4 black-90">
+                <h4 class="text-xl font-semibold mb-4 black-90 dark:text-gray-100">
                   “Arcu rhoncus amet tellus sit ipsum dictum sem. Faucibus
                   imperdiet velit tortor scelerisque quam velit et. Magna
                   pulvinar justo condimentum.”
                 </h4>
-                <h3 class="font-bold text-gray-900">Serena Jones</h3>
-                <p class="text-gray-500">CEO, Company Name</p>
-                <p class="py-8 text-base"><a href="#" class="underline">Read Case Study</a></p>
+                <h3 class="font-bold text-gray-900 dark:text-gray-200">Serena Jones</h3>
+                <p class="text-gray-500 dark:text-gray-400">CEO, Company Name</p>
+                <p class="py-8 text-base"><a href="#" class="underline dark:text-sky-200">Read Case Study</a></p>
               </div>
             </div>
             <div class="slide absolute inset-0 flex flex-col md:flex-row items-center gap-6 text-center md:text-left active">
@@ -1465,13 +1399,13 @@ Alignment Platforms</span>
                 <img src="images/test_1.png" alt="Person 3" class="w-32 h-32 rounded-full object-cover">
               </div>
               <div class=" ">
-               <h4 class="text-xl font-semibold mb-4 black-90">
+               <h4 class="text-xl font-semibold mb-4 black-90 dark:text-gray-100">
                   “Donec accumsan, massa sed mattis placerat, odio quam
                   fermentum metus, nec tincidunt elit ex ac augue.”
                 </h4>
-                <h3 class="font-bold text-gray-900">Ava Smith</h3>
-                <p class="text-gray-500">Founder, DesignWave</p>
-                <p class="py-8 text-base"><a href="#" class="underline">Read Case Study</a></p>
+                <h3 class="font-bold text-gray-900 dark:text-gray-200">Ava Smith</h3>
+                <p class="text-gray-500 dark:text-gray-400">Founder, DesignWave</p>
+                <p class="py-8 text-base"><a href="#" class="underline dark:text-sky-200">Read Case Study</a></p>
               </div>
             </div>
            <div class="slide absolute inset-0 flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
@@ -1479,33 +1413,32 @@ Alignment Platforms</span>
                 <img src="images/test_1.png" alt="Person 2" class="w-32 h-32 rounded-full object-cover">
               </div>
               <div>
-                <h4 class="text-xl font-semibold mb-4 black-90">
+                <h4 class="text-xl font-semibold mb-4 black-90 dark:text-gray-100">
                   “Suspendisse potenti. Curabitur convallis lectus non tortor
                   malesuada, vitae consequat urna pharetra.”
                 </h4>
-                <h3 class="font-bold text-gray-900">Michael Brown</h3>
-                <p class="text-gray-500">CTO, Techify</p>
-                <p class="py-8 text-base"><a href="#" class="underline">Read Case Study</a></p>
+                <h3 class="font-bold text-gray-900 dark:text-gray-200">Michael Brown</h3>
+                <p class="text-gray-500 dark:text-gray-400">CTO, Techify</p>
+                <p class="py-8 text-base"><a href="#" class="underline dark:text-sky-200">Read Case Study</a></p>
               </div>
             </div>
         </div>
 
-             <button id="prev" class="absolute hidden md:block left-2 top-1/2 -translate-y-1/2 border border-plum plum px-4 py-2 rounded-full hover:bg-pink-600 hover:text-white transition">
+             <button id="prev" class="absolute hidden md:block left-2 top-1/2 -translate-y-1/2 border border-plum plum px-4 py-2 rounded-full hover:bg-pink-600 hover:text-white transition dark:border-gray-600">
             ❮
           </button>
-          <button id="next" class="absolute hidden md:block right-2 top-1/2 -translate-y-1/2 border border-plum plum px-4 py-2 rounded-full hover:bg-pink-600 hover:text-white transition">
+          <button id="next" class="absolute hidden md:block right-2 top-1/2 -translate-y-1/2 border border-plum plum px-4 py-2 rounded-full hover:bg-pink-600 hover:text-white transition dark:border-gray-600">
             ❯
           </button>
 
         <div class="flex justify-center mt-6 space-x-2">
-          <div class="dot w-3 h-3 rounded-full bg-gray-400"></div>
+          <div class="dot w-3 h-3 rounded-full bg-gray-400 dark:bg-gray-500"></div>
           <div class="dot w-3 h-3 rounded-full bg-plum"></div>
-          <div class="dot w-3 h-3 rounded-full bg-gray-400"></div>
+          <div class="dot w-3 h-3 rounded-full bg-gray-400 dark:bg-gray-500"></div>
         </div>
        
     </div></div>
     </section>
-
 
         <!-- Slider end -->
           <section class="py-16 md:py-16 ">
@@ -1513,60 +1446,33 @@ Alignment Platforms</span>
      <div class="grid md:grid-cols-2 gap-10 items-center md:flex-row-reverse ">
           <img src="images/subpage1/doctor_with_tab.png" alt="Brand Image 2" class="rounded-xl object-cover">
         <div>
-            <h2 class="text-4xl font-bold mb-4 text-left">
+            <h2 class="text-4xl font-bold mb-4 text-left dark:text-gray-100">
               Feature vitae dignissim sit aenean sem nulla eget
             </h2>
-            <p class="text-gray-600 text-left">
+            <p class="text-gray-600 text-left dark:text-gray-300">
               Description mattis tincidunt consectetur massa. Sit elementum at lacus nisl tincidunt semper amet. Egestas nisi ut felis amet nunc. Tincidunt cras consequat arcu gravida justo non. Et euismod tincidunt lorem odio bibendum diam nunc pellentesque massa. Massa et ullamcorper nulla.
             </p>
             <div class="mt-4 flex"> 
-             <a href="#"></a> <button class="secondary-btn text-sm font-semibold px-4 py-2 rounded-full ">
+             <a href="#"></a> <button class="secondary-btn text-sm font-semibold px-4 py-2 rounded-full dark:bg-gray-700 dark:text-white">
             Button
-          </button> <a href="#" class="spruce underline ml-4 font-semibold pt-2 hover:no-underline">Button</a>
+          </button> <a href="#" class="spruce underline ml-4 font-semibold pt-2 hover:no-underline dark:text-gray-200">Button</a>
               </div>
           </div>
         </div>
-
-
-        <!--image end -->
-      
       </div>
     </section>
 
-    <!--logo section-->
-    <!-- Brand Approach Section -->
-     
-
-    <!-- mudaki Section -->
-    
-    <!-- spacer section -->
-  
-
-
- 
-
-    <!-- mudaki Section -->
- 
-
     <!-- CTA Section -->
-    <section class="bg-pearl py-16 hidden sm:block relative overflow-hidden">
-       <div class="static hidden sm:block">
-            
-               
-
-          </div>
+    <section class="bg-pearl py-16 hidden sm:block relative overflow-hidden dark:bg-gray-800">
       <div class="static hidden sm:block">
-        <!-- <div class="absolute right-0 -top-20"><img src="images/subpage1/dot_pattern_blue.png" /></div>
-        <div class="absolute left-0 bottom-0"><img src="images/subpage1/half_cercal_pattern.png" /></div> -->
-
         <div
           class="max-w-xl mx-auto grid md:grid-cols-1 gap-8 items-center px-6"
         >
-          <h2 class="text-4xl font-bold mb-2 spruce text-center">
+          <h2 class="text-4xl font-bold mb-2 spruce text-center dark:text-gray-100">
           CTA Fringilla purus nulla magna blandit donec eu sed ut
           </h2>
           <div class="text-center">
-            <a href="#"><button class="primary-btn text-sm font-semibold px-4 py-2 rounded-full ">
+            <a href="#"><button class="primary-btn text-sm font-semibold px-4 py-2 rounded-full dark:bg-indigo-600 dark:text-white">
                   Primary CTA
                 </button></a>
           </div>
@@ -1576,36 +1482,33 @@ Alignment Platforms</span>
 
     <!-- Footer -->
     <footer
-      class=" py-6 border-t border-gray-200 text-center text-sm text-gray-500"
+      class=" py-6 border-t border-gray-200 text-center text-sm text-gray-500 dark:bg-gray-900 dark:text-gray-300"
     >
-     <div class="static hidden lg:block">
-        
-          </div>
+      <div class="static hidden lg:block"></div>
       <div class="max-w-6xl mx-auto px-6 text-center">
 
           <div
-          class="grid md:grid-cols-5 gap-10 md:flex-row-reverse border-b border-gray-200 py-8" >
+          class="grid md:grid-cols-5 gap-10 md:flex-row-reverse border-b border-gray-200 py-8 dark:border-gray-700" >
 
         <div class="text-left col-span-3 ">
-           <p class="font-semibold text-xl">Join our newsletter</p>
-           <p>  Sapien eget aliquam neque porttitor sem</p>
+           <p class="font-semibold text-xl dark:text-gray-100">Join our newsletter</p>
+           <p class="dark:text-gray-300">  Sapien eget aliquam neque porttitor sem</p>
              </div>
-            <!--subscription form -->
             <div class="text-left col-span-2">
               
               <form id="subscribeForm" class=" ">
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  class="border border-onyx px-4 py-2 mr-2 w-64 focus:outline-none"
+                  class="border border-onyx px-4 py-2 mr-2 w-64 focus:outline-none dark:bg-gray-700 dark:text-gray-100"
                   required
                 />
 
-                   <a href="#"><button class="primary-btn text-sm font-semibold px-4 py-2 rounded-full ">
+                   <a href="#"><button class="primary-btn text-sm font-semibold px-4 py-2 rounded-full dark:bg-indigo-600 dark:text-white">
                   Subscribe
                 </button></a>
               
-                <div class="pt-2">
+                <div class="pt-2 dark:text-gray-300">
                   By subscribing you agree to with our <span class="font-medium underline"><a href="#">Privacy Policy</a></span> and
                   provide consent to receive updates from our company.
                 </div>
@@ -1621,7 +1524,7 @@ Alignment Platforms</span>
           class="grid sm:grid-cols-2 md:grid-cols-6 gap-10 items-center md:flex-row-reverse py-12"
         >
           
-          <div class="text-left text-sm">
+          <div class="text-left text-sm dark:text-gray-200">
             <span class="font-semibold text-base">Category one</span>
             <a href="#" class="hover:underline" ><p class="my-2">Link 1</p></a>
             <a href="#" class="hover:underline" ><p class="mb-2 ">Link 2</p></a>
@@ -1629,7 +1532,7 @@ Alignment Platforms</span>
             <a href="#" class="hover:underline" ><p class="mb-2 ">Link 4</p></a>
             <a href="#" class="hover:underline" ><p class="mb-2 ">Link 5</p></a>
           </div>
-          <div class="text-left text-sm">
+          <div class="text-left text-sm dark:text-gray-200">
             <span class="font-semibold text-base">Category two</span>
             <a href="#" class="hover:underline" ><p class="my-2">Link 6</p></a>
             <a href="#" class="hover:underline" ><p class="mb-2">Link 7</p></a>
@@ -1637,7 +1540,7 @@ Alignment Platforms</span>
             <a href="#" class="hover:underline" ><p class="mb-2">Link 9</p></a>
             <a href="#" class="hover:underline" ><p class="mb-2">Link 10</p></a>
           </div>
-          <div class="text-left text-sm">
+          <div class="text-left text-sm dark:text-gray-200">
             <span class="font-semibold text-base">Category three</span>
             <a href="#" class="hover:underline" ><p class="my-2">Link 11</p></a>
             <a href="#" class="hover:underline" ><p class="mb-2">Link 12</p></a>
@@ -1645,7 +1548,7 @@ Alignment Platforms</span>
             <a href="#" class="hover:underline" ><p class="mb-2">Link 14</p></a>
             <a href="#" class="hover:underline" ><p class="mb-2">Link 15</p></a>
           </div>
-         <div class="text-left text-sm">
+         <div class="text-left text-sm dark:text-gray-200">
             <span class="font-semibold text-base">Category four</span>
             <a href="#" class="hover:underline" ><p class="my-2">Link 16</p></a>
             <a href="#" class="hover:underline" ><p class="mb-2">Link 17</p></a>
@@ -1653,7 +1556,7 @@ Alignment Platforms</span>
             <a href="#" class="hover:underline" ><p class="mb-2">Link 19</p></a>
             <a href="#" class="hover:underline" ><p class="mb-2">Link 20</p></a>
           </div>
-         <div class="text-left text-sm">
+         <div class="text-left text-sm dark:text-gray-200">
             <span class="font-semibold text-base">Category five</span>
             <a href="#" class="hover:underline" ><p class="my-2">Link 21</p></a>
             <a href="#" class="hover:underline" ><p class="mb-2">Link 22</p></a>
@@ -1661,7 +1564,7 @@ Alignment Platforms</span>
             <a href="#" class="hover:underline" ><p class="mb-2">Link 24</p></a>
             <a href="#" class="hover:underline" ><p class="mb-2">Link 25</p></a>
           </div>
-          <div class="text-left text-sm">
+          <div class="text-left text-sm dark:text-gray-200">
             <span class="font-semibold text-base">Category six</span>
             <a href="#" class="hover:underline" ><p class="my-2">Link 26</p></a>
             <a href="#" class="hover:underline" ><p class="mb-2">Link 27</p></a>
@@ -1674,36 +1577,36 @@ Alignment Platforms</span>
         <div
           class="max-w-7xl  mx-auto flex items-center justify-between pt-4 border-t border-gray-200 "
         >
-          <div class="flex items-center space-x-2">
+          <div class="flex items-center space-x-2 dark:text-gray-300">
             © 2025 Alderr. All rights reserved.
           </div>
 
           <nav
             class="hidden md:flex items-center space-x-6 text-sm font-medium"
           >
-            <a href="#" class="alink underline hover:no-underline">Privacy Policy</a>
-            <a href="#" class="alink underline hover:no-underline">Terms of Service</a>
+            <a href="#" class="alink underline hover:no-underline dark:text-gray-300">Privacy Policy</a>
+            <a href="#" class="alink underline hover:no-underline dark:text-gray-300">Terms of Service</a>
           </nav>
           <div class="flex items-center space-x-2">
           <button
-          class="text-sm font-semibold px-2 py-2 rounded-full hover:bg-gray-100" >
+          class="text-sm font-semibold px-2 py-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700" >
            <img src="images/social_media/fb.svg" width="24px"> 
           </button>
 
           <button
-          class="text-sm font-semibold px-2 py-2 rounded-full hover:bg-gray-100" >
+          class="text-sm font-semibold px-2 py-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700" >
           <img src="images/social_media/instagram.svg" width="24px"> 
           </button>
           <button
-          class="text-sm font-semibold px-2 py-2 rounded-full hover:bg-gray-100" >
+          class="text-sm font-semibold px-2 py-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700" >
           <img src="images/social_media/linkedin.svg" width="24px"> 
           </button>
           <button
-          class="text-sm font-semibold px-2 py-2 rounded-full hover:bg-gray-100" >
+          class="text-sm font-semibold px-2 py-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700" >
           <img src="images/social_media/x.svg" width="24px"> 
           </button>
           <button
-            class="text-sm font-semibold px-2 py-2 rounded-full hover:bg-gray-100" >
+            class="text-sm font-semibold px-2 py-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700" >
           <img src="images/social_media/youtube.svg" width="24px"> 
           </button>
         </div>
@@ -1712,5 +1615,15 @@ Alignment Platforms</span>
     </footer>
     <script src="js/slider.js"></script>
     <script src="js/mmenu.js"></script>
+
+    <!-- Optional: small toggle example to switch dark mode (uncomment to use) -->
+    <!--
+    <script>
+      // Toggle dark mode (example)
+      // document.documentElement.classList.toggle('dark');
+      // or persist with localStorage and apply on load
+    </script>
+    -->
   </body>
 </html>
+ 
